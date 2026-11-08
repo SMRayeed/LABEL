@@ -1,0 +1,24 @@
+  ancestors from mondo_child_parent.csv: child=child parent=parent -> 17,801 rows, 11,788 children
+drugs with an FDA label: 472 of 574
+wrote me_label_own.csv: 2,832 rows
+wrote me_label_any.csv: 2,832 rows
+wrote me_label_allthree.csv: 2,832 rows
+
+Share of facts named (tier 0-2), same drugs, same edges (% [95% Wilson CI])
+relation               n             Wikipedia         Wiki+PubMed    label, own section        label, whole           all three
+contraindication    1416   10.95 [  9.4, 12.7]   17.23 [ 15.4, 19.3]    2.61 [  1.9,  3.6]   22.88 [ 20.8, 25.1]   26.69 [ 24.5, 29.1]
+indication          1416   22.25 [ 20.2, 24.5]   30.51 [ 28.2, 33.0]   19.07 [ 17.1, 21.2]   23.73 [ 21.6, 26.0]   34.04 [ 31.6, 36.5]
+
+Facts the prose misses (Wikipedia + PubMed, tier > 2) that the label names:
+  contraindication    1172 missed; named in own section 1.4%, anywhere in label 11.4%
+  indication           984 missed; named in own section 3.4%, anywhere in label 5.1%
+
+Family only (tier 3) in the label's own section:
+  contraindication   0.99%   (own section empty for 9.5% of edges)
+  indication         11.23%   (own section empty for 0.2% of edges)
+
+Chance floor: exact name of an unrelated disease anywhere in the label
+  contraindication   2.82%
+  indication         2.10%
+
+wrote <repo>/results/label_coverage.json

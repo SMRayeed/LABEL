@@ -1,0 +1,31 @@
+  ancestors from mondo_child_parent.csv: child=child parent=parent -> 17,801 rows, 11,788 children
+  pkg_ind_d2d.csv                  9,388 edges kept
+  pkg_con_d2dis.csv               30,675 edges kept
+  pkg_off_d2dis.csv                2,568 edges kept
+  contraindication: fetching up to 1,800 source articles
+
+  contraindication: 600 measurable edges
+  indication: fetching up to 1,800 source articles
+
+    throttled (HTTP 503); pacing +0.4s/request
+
+  indication: 600 measurable edges
+  off-label use: fetching up to 1,800 source articles
+
+  off-label use: 600 measurable edges
+
+building the co-occurrence index: 1,659 entities over 817 articles
+
+  index built in 5s
+
+wrote p1_edges_d2.csv: 1,800 edges
+wrote p1_prompts_d2.jsonl: 5,400 prompts
+
+tier distribution (0 exact, 1 synonym, 2 common name, 3 ancestor, 4 none):
+  tier 0:    186   10.3%
+  tier 1:      0    0.0%
+  tier 2:     18    1.0%
+  tier 3:    182   10.1%
+  tier 4:  1,414   78.6%
+
+network: 202 requests, 1 throttle events, 0 unrecoverable

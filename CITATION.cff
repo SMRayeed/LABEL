@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper."
+title: "LABEL: Literature Asymmetry between Efficacy and Limits in Drug Knowledge and Language Models"
+authors:
+  - family-names: Rayeed
+    given-names: S M
+    affiliation: Rensselaer Polytechnic Institute
+  - family-names: Stewart
+    given-names: Chuck
+    affiliation: Rensselaer Polytechnic Institute
+  - family-names: Ma
+    given-names: Yao
+    affiliation: Rensselaer Polytechnic Institute
+license: MIT
+type: software
+preferred-citation:
+  type: conference-paper
+  title: "LABEL: Literature Asymmetry between Efficacy and Limits in Drug Knowledge and Language Models"
+  authors:
+    - family-names: Rayeed
+      given-names: S M
+    - family-names: Stewart
+      given-names: Chuck
+    - family-names: Ma
+      given-names: Yao
+  collection-title: "W3PHIAI-27: International Workshop on Health Intelligence at AAAI 2027"
+  year: 2027

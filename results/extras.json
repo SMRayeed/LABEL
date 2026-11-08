@@ -1,0 +1,527 @@
+{
+  "retrieval": {
+    "per_model": {
+      "OLMo-2-1124-7B-Instruct": {
+        "indication|named": {
+          "n": 150,
+          "closed": 75.33,
+          "passage": 88.0,
+          "change": [
+            12.67,
+            5.33,
+            20.0
+          ]
+        },
+        "indication|category": {
+          "n": 150,
+          "closed": 48.0,
+          "passage": 45.33,
+          "change": [
+            -2.67,
+            -10.67,
+            5.33
+          ]
+        },
+        "indication|silent": {
+          "n": 150,
+          "closed": 44.67,
+          "passage": 43.33,
+          "change": [
+            -1.33,
+            -9.33,
+            6.67
+          ]
+        },
+        "contraindication|named": {
+          "n": 150,
+          "closed": 42.0,
+          "passage": 54.67,
+          "change": [
+            12.67,
+            3.33,
+            22.0
+          ]
+        },
+        "contraindication|category": {
+          "n": 106,
+          "closed": 30.19,
+          "passage": 30.19,
+          "change": [
+            0.0,
+            -8.49,
+            8.49
+          ]
+        },
+        "contraindication|silent": {
+          "n": 150,
+          "closed": 26.0,
+          "passage": 20.67,
+          "change": [
+            -5.33,
+            -12.67,
+            1.33
+          ]
+        }
+      },
+      "Qwen2.5-0.5B-Instruct": {
+        "indication|named": {
+          "n": 150,
+          "closed": 47.33,
+          "passage": 86.67,
+          "change": [
+            39.33,
+            31.33,
+            47.33
+          ]
+        },
+        "indication|category": {
+          "n": 150,
+          "closed": 34.0,
+          "passage": 44.67,
+          "change": [
+            10.67,
+            2.0,
+            20.0
+          ]
+        },
+        "indication|silent": {
+          "n": 150,
+          "closed": 26.67,
+          "passage": 34.0,
+          "change": [
+            7.33,
+            -0.67,
+            15.33
+          ]
+        },
+        "contraindication|named": {
+          "n": 150,
+          "closed": 30.0,
+          "passage": 70.67,
+          "change": [
+            40.67,
+            32.0,
+            49.33
+          ]
+        },
+        "contraindication|category": {
+          "n": 106,
+          "closed": 23.58,
+          "passage": 27.36,
+          "change": [
+            3.77,
+            -4.72,
+            12.26
+          ]
+        },
+        "contraindication|silent": {
+          "n": 150,
+          "closed": 29.33,
+          "passage": 23.33,
+          "change": [
+            -6.0,
+            -13.33,
+            0.67
+          ]
+        }
+      },
+      "Qwen2.5-7B-Instruct": {
+        "indication|named": {
+          "n": 150,
+          "closed": 78.67,
+          "passage": 85.33,
+          "change": [
+            6.67,
+            0.0,
+            13.33
+          ]
+        },
+        "indication|category": {
+          "n": 150,
+          "closed": 50.0,
+          "passage": 38.0,
+          "change": [
+            -12.0,
+            -18.67,
+            -5.33
+          ]
+        },
+        "indication|silent": {
+          "n": 150,
+          "closed": 39.33,
+          "passage": 22.67,
+          "change": [
+            -16.67,
+            -24.0,
+            -10.0
+          ]
+        },
+        "contraindication|named": {
+          "n": 150,
+          "closed": 33.33,
+          "passage": 44.0,
+          "change": [
+            10.67,
+            0.67,
+            20.0
+          ]
+        },
+        "contraindication|category": {
+          "n": 106,
+          "closed": 24.53,
+          "passage": 16.98,
+          "change": [
+            -7.55,
+            -17.92,
+            2.83
+          ]
+        },
+        "contraindication|silent": {
+          "n": 150,
+          "closed": 17.33,
+          "passage": 3.33,
+          "change": [
+            -14.0,
+            -20.0,
+            -8.0
+          ]
+        }
+      },
+      "granite-3.1-8b-instruct": {
+        "indication|named": {
+          "n": 150,
+          "closed": 76.67,
+          "passage": 90.67,
+          "change": [
+            14.0,
+            7.33,
+            20.67
+          ]
+        },
+        "indication|category": {
+          "n": 150,
+          "closed": 54.0,
+          "passage": 44.0,
+          "change": [
+            -10.0,
+            -17.33,
+            -2.67
+          ]
+        },
+        "indication|silent": {
+          "n": 150,
+          "closed": 45.33,
+          "passage": 29.33,
+          "change": [
+            -16.0,
+            -24.0,
+            -8.0
+          ]
+        },
+        "contraindication|named": {
+          "n": 150,
+          "closed": 18.67,
+          "passage": 38.0,
+          "change": [
+            19.33,
+            10.67,
+            28.0
+          ]
+        },
+        "contraindication|category": {
+          "n": 106,
+          "closed": 9.43,
+          "passage": 17.92,
+          "change": [
+            8.49,
+            0.0,
+            16.98
+          ]
+        },
+        "contraindication|silent": {
+          "n": 150,
+          "closed": 9.33,
+          "passage": 2.0,
+          "change": [
+            -7.33,
+            -12.0,
+            -2.67
+          ]
+        }
+      }
+    },
+    "pooled": {
+      "indication|named": {
+        "n": 150,
+        "change": [
+          11.11,
+          6.67,
+          15.78
+        ]
+      },
+      "indication|category": {
+        "n": 150,
+        "change": [
+          -8.22,
+          -13.33,
+          -3.11
+        ]
+      },
+      "indication|silent": {
+        "n": 150,
+        "change": [
+          -11.33,
+          -17.11,
+          -6.0
+        ]
+      },
+      "contraindication|named": {
+        "n": 150,
+        "change": [
+          14.22,
+          7.33,
+          20.89
+        ]
+      },
+      "contraindication|category": {
+        "n": 106,
+        "change": [
+          0.31,
+          -6.29,
+          6.92
+        ]
+      },
+      "contraindication|silent": {
+        "n": 150,
+        "change": [
+          -8.89,
+          -12.89,
+          -5.11
+        ]
+      },
+      "named_ind_minus_contra": [
+        -3.11,
+        -11.56,
+        5.11
+      ]
+    }
+  },
+  "scale": {
+    "Qwen2.5-0.5B-Instruct": {
+      "params_b": 0.5,
+      "acc": {
+        "indication": [
+          31.5,
+          27.91,
+          35.32,
+          600
+        ],
+        "off-label use": [
+          28.5,
+          25.03,
+          32.24,
+          600
+        ],
+        "contraindication": [
+          22.17,
+          19.03,
+          25.66,
+          600
+        ]
+      },
+      "gap": [
+        9.33,
+        4.03,
+        14.9
+      ]
+    },
+    "Qwen2.5-1.5B-Instruct": {
+      "params_b": 1.5,
+      "acc": {
+        "indication": [
+          45.67,
+          41.72,
+          49.67,
+          600
+        ],
+        "off-label use": [
+          35.83,
+          32.1,
+          39.75,
+          600
+        ],
+        "contraindication": [
+          25.33,
+          22.02,
+          28.96,
+          600
+        ]
+      },
+      "gap": [
+        20.34,
+        15.16,
+        26.16
+      ]
+    },
+    "Qwen2.5-3B-Instruct": {
+      "params_b": 3.0,
+      "acc": {
+        "indication": [
+          45.33,
+          41.39,
+          49.33,
+          600
+        ],
+        "off-label use": [
+          32.67,
+          29.03,
+          36.52,
+          600
+        ],
+        "contraindication": [
+          24.17,
+          20.91,
+          27.75,
+          600
+        ]
+      },
+      "gap": [
+        21.16,
+        16.06,
+        26.94
+      ]
+    },
+    "Qwen2.5-7B-Instruct": {
+      "params_b": 7.0,
+      "acc": {
+        "indication": [
+          50.83,
+          46.84,
+          54.82,
+          600
+        ],
+        "off-label use": [
+          35.0,
+          31.29,
+          38.9,
+          600
+        ],
+        "contraindication": [
+          23.83,
+          20.6,
+          27.4,
+          600
+        ]
+      },
+      "gap": [
+        27.0,
+        21.61,
+        32.4
+      ]
+    },
+    "Qwen2.5-14B-Instruct": {
+      "params_b": 14.0,
+      "acc": {
+        "indication": [
+          49.83,
+          45.85,
+          53.82,
+          600
+        ],
+        "off-label use": [
+          35.83,
+          32.1,
+          39.75,
+          600
+        ],
+        "contraindication": [
+          27.17,
+          23.76,
+          30.86,
+          600
+        ]
+      },
+      "gap": [
+        22.66,
+        17.09,
+        28.32
+      ]
+    }
+  },
+  "labels": {
+    "drugs_with_label": 472,
+    "drugs_total": 574,
+    "relations": {
+      "contraindication": {
+        "n": 1416,
+        "wiki": [
+          10.95,
+          9.42,
+          12.68
+        ],
+        "union": [
+          17.23,
+          15.35,
+          19.29
+        ],
+        "own": [
+          2.61,
+          1.9,
+          3.58
+        ],
+        "any": [
+          22.88,
+          20.77,
+          25.14
+        ],
+        "all3": [
+          26.69,
+          24.46,
+          29.06
+        ],
+        "own_family_only": 0.99,
+        "any_family_only": 8.4,
+        "own_section_empty": 9.53,
+        "prose_miss": 1172,
+        "rescued_by_own_section": 1.37,
+        "rescued_by_whole_label": 11.43,
+        "floor_exact_whole_label": 2.82
+      },
+      "indication": {
+        "n": 1416,
+        "wiki": [
+          22.25,
+          20.16,
+          24.49
+        ],
+        "union": [
+          30.51,
+          28.17,
+          32.96
+        ],
+        "own": [
+          19.07,
+          17.11,
+          21.2
+        ],
+        "any": [
+          23.73,
+          21.59,
+          26.01
+        ],
+        "all3": [
+          34.04,
+          31.62,
+          36.55
+        ],
+        "own_family_only": 11.23,
+        "any_family_only": 16.1,
+        "own_section_empty": 0.21,
+        "prose_miss": 984,
+        "rescued_by_own_section": 3.35,
+        "rescued_by_whole_label": 5.08,
+        "floor_exact_whole_label": 2.1
+      }
+    }
+  }
+}

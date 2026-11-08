@@ -1,0 +1,9 @@
+# data files used by this run
+# downloaded 2026-10-28 02:11 UTC
+0a5a010fcd88dcec572a573d98c26c1c244a11567092b6161d3ded611cfb5c69  kg.csv
+2631e8e165d41def1a46749adb1ce0a336c8aba7f6bc0978729592cee8fed60b  mondo.obo
+51e717b6b9f5d391f2793f9e16faf9c8629a661ab8f21c3a024458129f182ad2  doid.obo
+611f0411ac666be4e0270e54bbca67407e14720bfc3099311f0f5eec25c5a947  hetionet-v1.0-edges.sif.gz
+3ad9eb86c031df8bc7d5efefa6edc93562182eb9a6a71e5129d3f18b9d42c50e  hetionet-v1.0-nodes.tsv
+mondo.obo data-version: releases/2026-10-06
+doid.obo  data-version: releases/2026-09-30/doid.obo

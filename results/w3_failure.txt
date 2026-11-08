@@ -1,0 +1,14 @@
+1. Failure styles, closed book, harder distractors (%)
+
+model                         indication wrong  indication decl.  indication prec.  contraindi wrong  contraindi decl.  contraindi prec.
+Qwen2.5-0.5B-Instruct                     60.7               3.3              37.2              71.4               0.5              28.2
+Qwen2.5-7B-Instruct                       22.0              22.0              71.8              24.1              50.7              51.0
+OLMo-2-1124-7B-Instruct                   34.0              10.0              62.2              64.0               3.0              34.0
+granite-3.1-8b-instruct                   28.7              12.7              67.2              19.7              67.5              39.4
+
+2. Share declining (%), averaged over Qwen2.5-7B-Instruct, OLMo-2-1124-7B-Instruct, granite-3.1-8b-instruct
+
+page                       indication closed     indication page   contraindi closed     contraindi page
+Names the disease                        6.0                 5.8                36.2                41.6
+Names only its family                    9.1                26.0                42.1                54.4
+Silent                                  29.6                55.6                43.3                76.2

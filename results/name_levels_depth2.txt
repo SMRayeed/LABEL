@@ -1,0 +1,84 @@
+  ancestors from mondo_child_parent.csv: child=child parent=parent -> 17,801 rows, 11,788 children
+  ancestors table: 11,788 entities have a parent
+loading edges from ['pkg_ind_d2d.csv', 'pkg_con_d2dis.csv', 'pkg_off_d2dis.csv'] (names: redirects) ...
+  pkg_ind_d2d.csv                  9,388 edges kept
+  pkg_con_d2dis.csv               30,675 edges kept
+  pkg_off_d2dis.csv                2,568 edges kept
+  contraindication                30,675 edges available
+  indication                       9,388 edges available
+  off-label use                    2,568 edges available
+
+=== contraindication ===
+  measured 600, floor draws 1800, 1.5 ancestor names per target, 0 requests, 0 throttle events, 0 unrecoverable
+
+=== indication ===
+  measured 600, floor draws 1800, 1.8 ancestor names per target, 0 requests, 0 throttle events, 0 unrecoverable
+
+=== off-label use ===
+  measured 600, floor draws 1800, 2.1 ancestor names per target, 0 requests, 0 throttle events, 0 unrecoverable
+
+================================================================================================================
+TRACE RATE BY MATCH TIER   (T0 name · T1 +synonyms · T2 +common names · T3 +ancestors)
+================================================================================================================
+relation                     n      T0      T1      T2      T3   floor T0 floor T2 floor T3
+----------------------------------------------------------------------------------------------------------------
+contraindication           600   5.50%   5.50%   6.67%   9.33%      0.78%    0.89%    1.83%
+indication                 600  17.17%  17.17%  19.33%  34.67%      1.22%    1.39%    2.67%
+off-label use              600  10.50%  10.50%  11.83%  23.67%      0.72%    0.94%    3.28%
+
+================================================================================================================
+WHERE THE LIFT COMES FROM, after subtracting the floor
+================================================================================================================
+relation                  T0 corrected  nomenclature   granularity   reading
+----------------------------------------------------------------------------------------------------------------
+indication                      15.94%         2.00%       14.06%   granularity dominates
+off-label use                    9.78%         1.11%        9.50%   granularity dominates
+contraindication                 4.72%         1.06%        1.72%   neither helps
+----------------------------------------------------------------------------------------------------------------
+mean across relations                          1.39%         8.43%
+
+================================================================================================================
+EXAMPLES RECOVERED ABOVE T0 -- read these before trusting the table
+================================================================================================================
+  contraindication   Isoniazid                      -> acute liver failure            found at: ancestor
+  contraindication   Entecavir                      -> non-alcoholic steatohepatitis  found at: ancestor
+  contraindication   Ganciclovir                    -> adult idiopathic neutropenia   found at: ancestor
+  contraindication   Prednisolone                   -> ocular tuberculosis            found at: ancestor
+  contraindication   Clonidine                      -> chronic renal failure syndrome found at: ancestor
+  contraindication   Sumatriptan                    -> coronary thrombosis            found at: ancestor
+  contraindication   Salbutamol                     -> hypertension                   found at: common name
+  contraindication   Almotriptan                    -> Prinzmetal angina              found at: common name
+  contraindication   Pseudoephedrine                -> paracetamol poisoning          found at: ancestor
+  contraindication   Ciprofloxacin                  -> Achilles bursitis              found at: ancestor
+  contraindication   Pazopanib                      -> long QT syndrome               found at: common name
+  contraindication   Clomifene                      -> vision disorder                found at: common name
+
+HOW TO READ IT
+
+  nomenclature large, granularity small
+      A name table does the work, and the resolution claim shrinks to an
+      engineering note.
+
+  granularity large, nomenclature small
+      The text names groups, not synonyms. A name table does not fix it;
+      resolving needs the hierarchy and a choice among members.
+
+  both small
+      The relation is not written about at any level of description. No
+      text-side repair exists for it, which is itself a finding.
+
+  A spread in the T0 column across relations over the SAME entity types is a
+  statement about relations, not about names.
+
+CAVEATS
+  - T2 and T3 admit ordinary words, so their floors rise. Only the
+    floor-corrected columns are comparable. A floor above roughly 15% at T3
+    means that tier is reading vocabulary frequency, not evidence, and needs
+    tightening to mentions near the relation verb.
+  - A T3 hit says an ancestor was named, not the specific partner.
+  - Matching is lexical, so a relation stated without any name is a miss at
+    every tier, correctly.
+
+network: 0 requests, 0 throttle events, 0 unrecoverable
+
+wrote <repo>/results/name_levels_depth2.csv

@@ -1,0 +1,52 @@
+edges per relation in the full files:
+  contraindication         30,675
+  indication                9,388
+
+  edge-count ratio  contraindication / indication  =  3.27
+  (if the measured coverage ratio lands near this, dilution is the suspect)
+
+==========================================================================
+BASELINE, no degree control
+==========================================================================
+  indication           34.04%   n=1,416
+  contraindication     26.69%   n=1,416
+  difference +7.34 pts    ratio 1.28    z=4.26  p=2.01e-05
+
+==========================================================================
+TEST 1  —  WITHIN DRUG, Mantel-Haenszel
+==========================================================================
+  drugs contributing a table: 472
+  Mantel-Haenszel odds ratio, indication vs contraindication: 1.43   95% CI [1.21, 1.68]
+  MH chi-square 18.03   p = 2.17e-05
+
+  the gap holds within drug
+  This cancels article length, popularity and how well studied
+  the drug is. It does NOT answer the dilution objection, because
+  dilution operates INSIDE a drug: the same article still carries
+  3 indications and 30 contraindications. Only tests 2 and 3,
+  which hold degree fixed, speak to that.
+
+  Note: a paired comparison of per-drug rates is NOT valid here.
+  With one or two indication edges per drug that rate is 0 or 1,
+  so the comparison measures quantization, not coverage.
+
+==========================================================================
+TEST 2  —  REGRESSION WITH log(edges for this drug in this relation)
+==========================================================================
+  term                      coef       se       z           p
+  intercept              -0.0203   0.1128   -0.18    8.57e-01
+  is_contraindication     0.0172   0.0997    0.17    8.63e-01
+  log_degree             -0.3352   0.0520   -6.44    1.17e-10
+
+  the relation term does NOT survive — degree was carrying it
+
+==========================================================================
+TEST 3  —  DEGREE-MATCHED STRATUM
+==========================================================================
+  edges for that drug       indication  contraindication     diff          p
+  3 to 5                       41.41% (n=594)    36.27% (n=102)    +5.14   3.20e-01
+  6 to 12                      29.78% (n=591)    32.32% (n=297)    -2.54   4.41e-01
+  13+                          25.97% (n=231)    24.09% (n=1017)   +1.88   5.54e-01
+
+  A gap that holds inside every stratum is not a dilution
+  artifact. A gap that only appears in the wide strata is.

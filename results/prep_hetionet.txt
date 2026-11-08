@@ -1,0 +1,18 @@
+47,031 nodes
+  wrote <repo>/work/het_CtD.csv: 755 edges, 387 drugs, 77 diseases
+  wrote <repo>/work/het_CpD.csv: 390 edges, 221 drugs, 50 diseases
+  wrote <repo>/work/het_all.csv: 1,145 edges (union, for --primekg)
+
+The smallest relation holds 390 edges, so --n 600 would
+silently measure fewer. Pass --n 390 and read the per-relation counts
+the tier script prints, not the number you asked for.
+
+Next, build DOID parents (Hetionet uses the Disease Ontology,
+not MONDO), then measure:
+  wget http://purl.obolibrary.org/obo/doid.obo
+  python3 mondo_parents.py --obo doid.obo --prefix DOID \
+      --primekg het_all.csv --out doid_child_parent.csv
+  python3 name_tiers.py --edges het_CtD.csv het_CpD.csv \
+      --col-source x_name --col-target y_name --col-relation display_relation \
+      --names redirects --any-names --ancestors doid_child_parent.csv \
+      --ancestor-depth 2 --n 390 --csv het_tiers.csv

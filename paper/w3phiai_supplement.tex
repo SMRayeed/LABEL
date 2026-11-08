@@ -1,0 +1,377 @@
+\documentclass[letterpaper]{article} % DO NOT CHANGE THIS
+% Supplement, AAAI-27 Author Kit.
+\usepackage{aaai2027}  % DO NOT CHANGE THIS
+\usepackage[hyphens]{url}  % DO NOT CHANGE THIS
+\usepackage{graphicx} % DO NOT CHANGE THIS
+\urlstyle{rm} % DO NOT CHANGE THIS
+\def\UrlFont{\rm}  % DO NOT CHANGE THIS
+\usepackage{natbib}  % DO NOT CHANGE THIS AND DO NOT ADD ANY OPTIONS TO IT
+\usepackage{caption} % DO NOT CHANGE THIS AND DO NOT ADD ANY OPTIONS TO IT
+\frenchspacing  % DO NOT CHANGE THIS
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{array}
+\newcommand{\lbl}{\textsc{Label}}
+\pdfinfo{
+/TemplateVersion (2027.1)
+}
+\setcounter{secnumdepth}{2}
+\renewcommand{\thesection}{\Alph{section}}
+
+\title{Supplementary Material for\\\lbl{}: Literature Asymmetry between Efficacy and Limits\\in Drug Knowledge and Language Models}
+\author{S M Rayeed, Yao Ma}
+\affiliations{Rensselaer Polytechnic Institute, Troy, NY, USA}
+
+\begin{document}
+\maketitle
+
+\section{Measuring Whether Text Names a Fact}
+
+\paragraph{Names.}
+Each disease has three sets of names. The exact name is its MONDO label
+\citep{vasilevsky2022mondo}. Alternative names are the titles of Wikipedia
+redirects to the disease's article, which include synonyms, lay terms and
+abbreviations. Family names are the labels of the disease's MONDO ancestors up
+to two levels above it, taken from a directed child-to-parent table of 17,801
+edges over 11,788 diseases. The sets are cumulative: a text that names the
+disease at a finer level is also counted at every coarser one, and each edge is
+assigned the finest level it reaches.
+
+\paragraph{Matching rule.}
+A phrase matches when it occurs on word boundaries, ignoring case, with an
+optional trailing ``s'' to allow plurals. Multi-word phrases match across any
+run of whitespace. Phrases shorter than four characters are never matched, so
+short abbreviations do not produce coincidental hits. Under this rule
+``asthma'' does not match ``asthmatic,'' and ``colitis'' does not match inside
+a longer word.
+
+\paragraph{Floor.}
+For every edge, three diseases that the drug has no edge to in that relation
+are drawn from the same relation's targets, and the same matcher is run on the
+drug's text for them. The share of these unrelated diseases that match is the
+floor. It estimates how often a disease name appears in a drug's text by
+coincidence rather than as a statement of the relation. Table~\ref{tab:floor}
+gives the exact-name floor on the probe sample.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lcc}
+\toprule
+Relation & Real edge & Floor \\
+\midrule
+Indication & 17.17 & 1.22 \\
+Off-label use & 10.50 & 0.72 \\
+Contraindication & 5.50 & 0.78 \\
+\bottomrule
+\end{tabular}
+\caption{Exact-name match rate (\%) in Wikipedia for real edges and for three
+unrelated diseases per edge, 600 edges per relation.}
+\label{tab:floor}
+\end{table}
+
+\paragraph{Contribution of each level.}
+On the same draw in Wikipedia, averaged over the three relations, adding
+alternative names to the exact name raises the match rate by 1.39 points.
+Adding the disease's MONDO parent raises it by a further 5.50 points, and
+adding ancestors up to two levels by 8.43 points. Each increase is the
+difference of floor-corrected rates, with the floor recomputed at every
+level, because wider name sets also match unrelated diseases more often. Only the exact and
+alternative names count as naming the fact in the main paper.
+
+\section{Corpora}
+
+\paragraph{Wikipedia.}
+For each drug we fetch the current English Wikipedia article by title and
+cache its source text. The text measurement runs on the article as fetched.
+
+\paragraph{PubMed.}
+Abstracts are retrieved through the NCBI E-utilities \citep{sayers2009eutils}
+with the query \texttt{"<drug>"[Title/Abstract] AND (<fragment>)}, sorted by
+relevance. Each drug receives a budget of 40 abstracts, split evenly between
+two fragments, one framed for therapeutic use and one for adverse effects and
+contraindications, so that each relation receives 20. The union of returned
+records is fetched once and cached. A request that fails is not cached, so a
+failure is never recorded as an empty result. The first version of the corpus
+used a single relevance-ranked query of 40 abstracts per drug; the comparison
+of the two versions is reported in the main paper.
+
+\section{Model Probe}
+
+\paragraph{Question format.}
+Each edge is scored as a completion. The prompt is a relation-specific stem
+that names the drug and stops before the disease (Table~\ref{tab:stems}); each
+option is appended as a continuation, and its score is the mean token
+log-probability of the continuation. The option with the highest score is the
+model's answer. No chat template, passage or retrieval is used.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{1.75cm}>{\raggedright\arraybackslash}p{5.35cm}}
+\toprule
+Relation & Stem \\
+\midrule
+Indication & \textit{X is a drug used to treat the disease called} \\
+Contraind. & \textit{X is a drug that must not be given to patients who have} \\
+Off-label use & \textit{X is a drug sometimes used off-label to treat} \\
+Treats (Hetionet) & \textit{X is a drug used to treat the disease called} \\
+Palliates (Hetionet) & \textit{X is a drug used to relieve the symptoms of} \\
+\bottomrule
+\end{tabular}
+\caption{Prompt stems; X is the drug's name.}
+\label{tab:stems}
+\end{table}
+
+\paragraph{Options.}
+Each question has five options: the true disease and four distractors drawn
+at random from the same relation's targets in the sample. Distractors exclude
+every disease the drug is paired with in that relation within the sample.
+Partners outside the sample cannot be excluded; with about 600 targets per
+relation and a handful of partners per drug, the chance that a distractor is
+an unrecorded true partner is on the order of one percent, and it applies
+equally to all relations. The order of options is shuffled with a fixed seed.
+
+\paragraph{Models.}
+Qwen2.5-0.5B-Instruct and Qwen2.5-7B-Instruct \citep{qwen2025qwen25} run in
+32-bit floating point on CPU with Hugging Face Transformers.
+
+\section{Prompt Stems and Declines}
+
+\begin{table}[h]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{p{2.15cm}p{4.95cm}}
+\toprule
+Relation & Prompt stem (X is the drug's name) \\
+\midrule
+Indication & \textit{X is a drug used to treat the disease called} \\
+Contraindication & \textit{X is a drug that must not be given to patients who have} \\
+Off-label use & \textit{X is a drug sometimes used off-label to treat} \\
+Treats & \textit{X is a drug used to treat the disease called} \\
+Palliates & \textit{X is a drug used to relieve the symptoms of} \\
+\bottomrule
+\end{tabular}
+\caption{Prompt stems for the closed-book probe. Each option is scored as the
+continuation of the stem; the last two rows are for the Hetionet relations.}
+\label{tab:stems}
+\end{table}
+
+\begin{table}[h]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{lcccc}
+\toprule
+ & \multicolumn{2}{c}{Indication} & \multicolumn{2}{c}{Contraindication} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Page & closed & page & closed & page \\
+\midrule
+Names the disease & 6.0 & 5.8 & 36.2 & 41.6 \\
+Names only its family & 9.1 & 26.0 & 42.1 & 54.4 \\
+Silent & 29.6 & 55.6 & 43.3 & 76.2 \\
+\bottomrule
+\end{tabular}
+\caption{Share of questions answered ``Not enough information'' (\%), closed
+book and with the drug's page, averaged over Qwen2.5 7B, OLMo 2 7B, and
+Granite 3.1 8B.}
+\label{tab:declines}
+\end{table}
+
+\section{Negative Control on Hetionet}
+
+\begin{table}[h]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lcc}
+\toprule
+ & \emph{treats} & \emph{palliates} \\
+\midrule
+Named in Wikipedia (\%) & 57.33 (n=600) & 56.10 (n=385) \\
+Odds ratio, pooled & \multicolumn{2}{c}{1.05, $p = 0.70$} \\
+Odds ratio, within drug (51) & \multicolumn{2}{c}{2.48 [1.29, 4.75]} \\
+Relation term, degree held fixed & \multicolumn{2}{c}{$p = 0.16$} \\
+\midrule
+Gap by edges per drug: 1--2 & \multicolumn{2}{c}{$+8.16$ ($p = 0.06$)} \\
+\phantom{Gap by edges per drug:} 3--5 & \multicolumn{2}{c}{$+0.93$ ($p = 0.89$)} \\
+\phantom{Gap by edges per drug:} 6--12 & \multicolumn{2}{c}{$-11.38$ ($p = 0.32$)} \\
+\bottomrule
+\end{tabular}
+\caption{Negative control on Hetionet. Two benefit relations, same corpus and
+matcher. No gap survives the degree control, and the strata change sign.}
+\label{tab:hetionet}
+\end{table}
+
+\section{Harder-Distractor Check}
+
+\paragraph{Questions.}
+The check reuses the question set of the companion abstention study. Each
+question asks ``Which disease is X used to treat?'' (indication) or ``In
+patients with which disease must X not be given?'' (contraindication) and
+lists five diseases and the option ``Not enough information to tell,''
+lettered A to F. The position of each option, including the decline option,
+is random.
+
+\paragraph{Distractors.}
+Wrong options are taken first from the true disease's MONDO siblings, then
+from its cousins (other children of its grandparent), and only then from
+random diseases of the same relation. They never include the true disease's
+own ancestors or descendants, or any disease the drug is related to by the
+same relation. In 481 of 856 questions all four distractors come from siblings
+or cousins.
+
+\paragraph{Scoring.}
+Each prompt is formatted with the model's chat template, and the answer is the
+option letter with the highest next-token probability. Both spellings of each
+letter, with and without a leading space, are scored and the better one kept;
+probabilities are renormalized over the six letters. Prompts are batched with
+left padding, and position indices are rebuilt from the attention mask so that
+batched and single scores agree.
+
+\paragraph{Models.}
+Qwen2.5 0.5B and 7B, OLMo~2 7B \citep{olmo2024olmo2} and Granite~3.1 8B
+\citep{granite2024}, all instruction-tuned, in 32-bit floating point on CPU.
+
+\section{Statistical Procedures}
+
+\paragraph{Within-drug odds ratio.}
+For drug $d$, let $a_d$ and $b_d$ be its named and unnamed indication edges,
+$c_d$ and $e_d$ its named and unnamed contraindication edges, and $n_d$ their
+total. The Mantel--Haenszel estimate \citep{mantel1959} is
+\begin{equation}
+\mathrm{OR}_{\mathrm{MH}} = \frac{\sum_d a_d e_d / n_d}{\sum_d b_d c_d / n_d},
+\end{equation}
+with a 95\% confidence interval $\exp(\log \mathrm{OR}_{\mathrm{MH}} \pm
+1.96/\sqrt{\sum_d V_d})$, where $V_d = n_{d,1} n_{d,2} m_{d,1} m_{d,2} / (n_d^2
+(n_d - 1))$ is the hypergeometric variance of drug $d$'s table with row totals
+$n_{d,\cdot}$ and column totals $m_{d,\cdot}$, and a continuity-corrected
+Cochran--Mantel--Haenszel test of no association.
+
+\paragraph{Edge-count control.}
+A logistic model regresses whether a fact is named on an indicator for the
+relation and on $\log$ of the drug's number of edges in that relation in the
+full graph. The relation coefficient tests the gap with edge count held fixed.
+
+\paragraph{Wilson intervals.}
+For $k$ successes in $n$ trials, $\hat p = k/n$, and $z = 1.96$, the interval
+is
+\begin{equation}
+\frac{\hat p + \frac{z^2}{2n} \pm z\sqrt{\frac{\hat p(1-\hat p)}{n} +
+\frac{z^2}{4n^2}}}{1 + \frac{z^2}{n}}.
+\end{equation}
+
+\paragraph{Paired gain from scale.}
+For each edge $i$, the gain is $g_i = y_i^{7B} - y_i^{0.5B}$, where $y = 1$
+for a correct answer. The statistic is the mean gain on indications minus the
+mean gain on contraindications. Its interval comes from 5,000 bootstrap
+resamples in which drugs, not edges, are drawn with replacement, so that edges
+of the same drug move together. The $p$-value uses the normal approximation
+with the bootstrap standard error.
+
+\paragraph{Gap within naming groups.}
+In the distractor check, the indication-minus-contraindication difference is
+computed separately within questions whose text names the answer, names only
+its family, or names nothing. The group differences $\delta_g$ are combined as
+$\sum_g w_g \delta_g / \sum_g w_g$ with $w_g = n_{g,1} n_{g,2} / (n_{g,1} +
+n_{g,2})$, and the standard error follows from the binomial variances of the
+group proportions.
+
+\section{Additional Results}
+
+\begin{table}[h]
+\centering
+\small
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{lccc}
+\toprule
+Relation & 0.5B [95\% CI] & 7B [95\% CI] & Gain \\
+\midrule
+Indication & 31.50 [27.91, 35.32] & 50.83 [46.84, 54.82] & +19.33 \\
+Off-label & 28.50 [25.03, 32.24] & 35.00 [31.29, 38.90] & +6.50 \\
+Contraind. & 22.17 [19.03, 25.66] & 23.83 [20.60, 27.40] & +1.67 \\
+\bottomrule
+\end{tabular}
+\caption{Probe accuracy (\%) and paired gain from 0.5B to 7B (points), 600
+edges per relation. Indication gain minus contraindication gain: +17.67 [12.68,
+22.70], $p = 4.8\times10^{-12}$.}
+\label{tab:probe_full}
+\end{table}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lccc}
+\toprule
+Edges per drug & 3--5 & 6--12 & 13+ \\
+\midrule
+Wikipedia & +13.94 & +6.04 & +1.64 \\
+Wikipedia + PubMed & +11.81 & +6.90 & +2.23 \\
+\bottomrule
+\end{tabular}
+\caption{Indication minus contraindication coverage (points) within strata of
+the drug's number of edges in the relation. The 13+ stratum is not
+distinguishable from zero in either corpus.}
+\label{tab:degree}
+\end{table}
+
+\begin{table}[h]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lccccc}
+\toprule
+Model & Ind. & Contra. & Gap & Within & $p$ (within) \\
+\midrule
+Qwen2.5 0.5B & 36.0 & 28.1 & +7.9 & +8.2 & $8.9\times10^{-3}$ \\
+Qwen2.5 7B & 56.0 & 25.1 & +30.9 & +31.3 & $<10^{-15}$ \\
+OLMo 2 7B & 56.0 & 33.0 & +23.0 & +23.6 & $2.3\times10^{-13}$ \\
+Granite 3.1 8B & 58.7 & 12.8 & +45.9 & +46.3 & $<10^{-15}$ \\
+\bottomrule
+\end{tabular}
+\caption{Harder-distractor check, closed book (\%). 450 indication and 406
+contraindication questions. Raw-gap $p$-values are $0.013$ for Qwen2.5 0.5B,
+$1.5\times10^{-11}$ for OLMo~2 7B, and below $10^{-15}$ for Qwen2.5 7B and
+Granite~3.1 8B.}
+\label{tab:distractor_full}
+\end{table}
+
+\paragraph{Control graph.}
+On Hetionet, Wikipedia names the disease for 57.33\% of 600 sampled
+\emph{treats} edges and 56.10\% of 385 measurable \emph{palliates} edges, an
+odds ratio of 1.05 ($p = 0.70$). Within the 51 drugs that carry both
+relations, the Mantel--Haenszel odds ratio is 2.48 (95\% CI 1.29--4.75). With
+the drug's edge count held fixed, the relation term is not significant
+($p = 0.16$), and the edge-count strata show no consistent direction (+8.2
+points for 1--2 edges, +0.9 for 3--5, $-11.4$ for 6--12). In PrimeKG, the
+relation term remains significant under the same control ($p = 2.4\times10^{-4}$
+in Wikipedia). Hetionet uses the Disease Ontology rather than MONDO for its
+hierarchy.
+
+\section{Reproducibility}
+
+\paragraph{Pipeline.}
+The analysis runs in five stages, each a standalone script that reads the
+previous stage's files: building the edge samples from PrimeKG, Hetionet and
+MONDO; fetching and caching Wikipedia articles and PubMed abstracts; measuring
+the naming level of every edge against its floor; scoring the model probe; and
+computing the within-drug, paired and distractor statistics. A single
+script runs all five stages from the public downloads, submits the model jobs
+to the cluster scheduler, and writes every table. The statistics use the
+Python standard library only. Random draws use a fixed seed of 0.
+
+\paragraph{Compute.}
+All model scoring runs on CPU nodes of a university supercomputer, with
+PyTorch 2.14 and Transformers 5.20 in 32-bit floating point. No GPU is
+required.
+
+\paragraph{Data.}
+PrimeKG, Hetionet, MONDO, Wikipedia and PubMed are public. We release the
+sampled edge lists, the per-edge naming levels and the per-edge model scores,
+together with the scripts, so that every table in the paper and this
+supplement can be regenerated from the released files.
+
+\bibliography{refs}
+
+\end{document}

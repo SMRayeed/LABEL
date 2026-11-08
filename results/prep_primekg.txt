@@ -1,0 +1,5 @@
+<repo>/data/kg.csv: 8,100,498 rows
+  pkg_ind_d2d.csv          9,388  indication
+  pkg_con_d2dis.csv       30,675  contraindication
+  pkg_off_d2dis.csv        2,568  off-label use
+  pkg_pc.csv              64,388  disease_disease

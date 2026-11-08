@@ -1,0 +1,12 @@
+drugs carrying at least 3 of each relation: 595
+  wrote matched_indication.csv: 1,785 edges over 595 drugs
+  wrote matched_contraindication.csv: 1,785 edges over 595 drugs
+
+Every drug now contributes 3 edges of each relation, so
+the within-drug tables are balanced and drug identity cancels.
+Expected Mantel-Haenszel strata: 595  (was 101, most of them with one edge on one side)
+
+Power note: at 1,785 edges per relation and rates near 20% and 7%,
+the within-drug test detects an odds ratio of about 1.6 or larger.
+If it still returns a null at this size, the between-drug gap is
+not a relation effect and the paper needs a different claim.

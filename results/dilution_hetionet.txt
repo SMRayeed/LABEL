@@ -1,0 +1,52 @@
+edges per relation in the full files:
+  treats                      755
+  palliates                   390
+
+  edge-count ratio  palliates / treats  =  0.52
+  (if the measured coverage ratio lands near this, dilution is the suspect)
+
+==========================================================================
+BASELINE, no degree control
+==========================================================================
+  treats               57.33%   n=600
+  palliates            56.10%   n=385
+  difference +1.23 pts    ratio 1.02    z=0.38  p=7.04e-01
+
+==========================================================================
+TEST 1  —  WITHIN DRUG, Mantel-Haenszel
+==========================================================================
+  drugs contributing a table: 51
+  Mantel-Haenszel odds ratio, treats vs palliates: 2.48   95% CI [1.29, 4.75]
+  MH chi-square 5.70   p = 1.69e-02
+
+  the gap holds within drug
+  This cancels article length, popularity and how well studied
+  the drug is. It does NOT answer the dilution objection, because
+  dilution operates INSIDE a drug: the same article still carries
+  3 indications and 30 contraindications. Only tests 2 and 3,
+  which hold degree fixed, speak to that.
+
+  Note: a paired comparison of per-drug rates is NOT valid here.
+  With one or two indication edges per drug that rate is 0 or 1,
+  so the comparison measures quantization, not coverage.
+
+==========================================================================
+TEST 2  —  REGRESSION WITH log(edges for this drug in this relation)
+==========================================================================
+  term                      coef       se       z           p
+  intercept               0.7873   0.1198    6.57    4.88e-11
+  is_palliates           -0.1908   0.1361   -1.40    1.61e-01
+  log_degree             -0.4474   0.0757   -5.91    3.47e-09
+
+  the relation term does NOT survive — degree was carrying it
+
+==========================================================================
+TEST 3  —  DEGREE-MATCHED STRATUM
+==========================================================================
+  edges for that drug           treats         palliates     diff          p
+  1 to 2                       68.06% (n=310)    59.91% (n=217)    +8.16   5.51e-02
+  3 to 5                       51.61% (n=93)     50.68% (n=146)    +0.93   8.89e-01
+  6 to 12                      43.17% (n=139)    54.55% (n=22)    -11.38   3.19e-01
+
+  A gap that holds inside every stratum is not a dilution
+  artifact. A gap that only appears in the wide strata is.

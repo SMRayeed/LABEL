@@ -1,0 +1,41 @@
+reading <repo>/data/doid.obo ...
+  12,335 terms, 12,334 with a parent
+  0 of 17,479 is_a pairs appear reversed (directed, good)
+reading names from <repo>/work/het_all.csv ...
+  91 DOID ids carry a name in that file
+  86 of them exist in this DOID release (94.5%)
+
+wrote <repo>/work/doid_child_parent.csv: 103 pairs, 74 children, 4 parents at most
+  dropped 24 pairs whose parent has more than 400 descendants
+  dropped 0 pairs whose parent has no name
+
+broadest terms, excluded by the cut:
+   12,334 descendants  disease
+    9,233 descendants  disease of anatomical entity
+    5,235 descendants  genetic disease
+    4,796 descendants  monogenic disease
+    4,211 descendants  autosomal genetic disease
+    3,054 descendants  nervous system disease
+    2,857 descendants  disease of cellular proliferation
+    2,492 descendants  autosomal recessive disease
+
+sample pairs:
+  Alzheimer's disease  ->  tauopathy
+  Barrett's esophagus  ->  esophageal disease
+  Crohn's disease  ->  inflammatory bowel disease
+  Gilles de la Tourette syndrome  ->  tic disorder
+  Graves' disease  ->  autoimmune disease of endocrine system
+  Kawasaki disease  ->  lymphadenitis
+  Paget's disease of bone  ->  hyperostosis
+  Parkinson's disease  ->  synucleinopathy
+
+Next, measure the granularity tier against it. Start at depth 1, which asks
+only whether the article named the disease's immediate parent:
+
+  python3 name_tiers.py --edges pkg_ind_d2d.csv pkg_con_d2dis.csv \
+      pkg_off_d2dis.csv --names redirects --any-names --n 600 \
+      --ancestors <repo>/work/doid_child_parent.csv --ancestor-depth 1 --rps 3 --csv primekg_tiers.csv
+
+Watch the T3 floor. Under about 15% the column is real. If it climbs, the
+parents still in the table are too broad: lower --max-descendants here and
+rebuild.

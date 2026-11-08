@@ -1,0 +1,23 @@
+# created by the pipeline; downloads, caches and model weights are not versioned
+data/
+work/
+logs/
+check/
+globi/
+smoke/
+smoke_globi/
+hf_cache/
+*.cache.jsonl
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.synctex.gz
+paper/drawio/*_preview.png

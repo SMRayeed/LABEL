@@ -1,0 +1,1146 @@
+x_id,x_name,y_id,y_name,display_relation
+DB00997,Doxorubicin,DOID:363,uterine cancer,treats
+DB00206,Reserpine,DOID:10763,hypertension,treats
+DB00960,Pindolol,DOID:10763,hypertension,treats
+DB00665,Nilutamide,DOID:10283,prostate cancer,treats
+DB00290,Bleomycin,DOID:2998,testicular cancer,treats
+DB01232,Saquinavir,DOID:635,acquired immunodeficiency syndrome,treats
+DB00555,Lamotrigine,DOID:1826,epilepsy syndrome,treats
+DB00444,Teniposide,DOID:2531,hematologic cancer,treats
+DB00860,Prednisolone,DOID:4481,allergic rhinitis,treats
+DB00635,Prednisone,DOID:2531,hematologic cancer,treats
+DB00985,Dimenhydrinate,DOID:4481,allergic rhinitis,treats
+DB00808,Indapamide,DOID:10763,hypertension,treats
+DB01244,Bepridil,DOID:10763,hypertension,treats
+DB00888,Mechlorethamine,DOID:2531,hematologic cancer,treats
+DB00591,Fluocinolone Acetonide,DOID:3310,atopic dermatitis,treats
+DB00530,Erlotinib,DOID:1324,lung cancer,treats
+DB00191,Phentermine,DOID:9970,obesity,treats
+DB00620,Triamcinolone,DOID:8577,ulcerative colitis,treats
+DB00853,Temozolomide,DOID:3070,malignant glioma,treats
+DB00654,Latanoprost,DOID:1686,glaucoma,treats
+DB00783,Estradiol,DOID:10283,prostate cancer,treats
+DB08881,Vemurafenib,DOID:4159,skin cancer,treats
+DB00563,Methotrexate,DOID:9074,systemic lupus erythematosus,treats
+DB00741,Hydrocortisone,DOID:4481,allergic rhinitis,treats
+DB00773,Etoposide,DOID:1192,peripheral nervous system neoplasm,treats
+DB00993,Azathioprine,DOID:418,systemic scleroderma,treats
+DB01275,Hydralazine,DOID:10763,hypertension,treats
+DB01101,Capecitabine,DOID:10534,stomach cancer,treats
+DB00401,Nisoldipine,DOID:10763,hypertension,treats
+DB00563,Methotrexate,DOID:1324,lung cancer,treats
+DB00222,Glimepiride,DOID:9352,type 2 diabetes mellitus,treats
+DB00290,Bleomycin,DOID:1909,melanoma,treats
+DB01280,Nelarabine,DOID:2531,hematologic cancer,treats
+DB00455,Loratadine,DOID:3310,atopic dermatitis,treats
+DB00860,Prednisolone,DOID:3083,chronic obstructive pulmonary disease,treats
+DB00244,Mesalazine,DOID:8577,ulcerative colitis,treats
+DB00250,Dapsone,DOID:12365,malaria,treats
+DB01023,Felodipine,DOID:10763,hypertension,treats
+DB01047,Fluocinonide,DOID:3310,atopic dermatitis,treats
+DB00635,Prednisone,DOID:2841,asthma,treats
+DB00541,Vincristine,DOID:2531,hematologic cancer,treats
+DB00443,Betamethasone,DOID:2531,hematologic cancer,treats
+DB01234,Dexamethasone,DOID:9008,psoriatic arthritis,treats
+DB00688,Mycophenolate mofetil,DOID:418,systemic scleroderma,treats
+DB00491,Miglitol,DOID:9352,type 2 diabetes mellitus,treats
+DB00570,Vinblastine,DOID:2998,testicular cancer,treats
+DB00441,Gemcitabine,DOID:1793,pancreatic cancer,treats
+DB00661,Verapamil,DOID:6364,migraine,treats
+DB00205,Pyrimethamine,DOID:12365,malaria,treats
+DB00959,Methylprednisolone,DOID:7147,ankylosing spondylitis,treats
+DB00544,Fluorouracil,DOID:10534,stomach cancer,treats
+DB01068,Clonazepam,DOID:1826,epilepsy syndrome,treats
+DB01101,Capecitabine,DOID:263,kidney cancer,treats
+DB00488,Altretamine,DOID:2394,ovarian cancer,treats
+DB00970,Dactinomycin,DOID:263,kidney cancer,treats
+DB00177,Valsartan,DOID:3393,coronary artery disease,treats
+DB00997,Doxorubicin,DOID:184,bone cancer,treats
+DB00215,Citalopram,DOID:0050741,alcohol dependence,treats
+DB01394,Colchicine,DOID:13189,gout,treats
+DB01320,Fosphenytoin,DOID:1826,epilepsy syndrome,treats
+DB01181,Ifosfamide,DOID:2531,hematologic cancer,treats
+DB01057,Echothiophate,DOID:1686,glaucoma,treats
+DB00338,Omeprazole,DOID:9206,Barrett's esophagus,treats
+DB00993,Azathioprine,DOID:8577,ulcerative colitis,treats
+DB00501,Cimetidine,DOID:9970,obesity,treats
+DB00563,Methotrexate,DOID:2377,multiple sclerosis,treats
+DB00860,Prednisolone,DOID:2531,hematologic cancer,treats
+DB00795,Sulfasalazine,DOID:8577,ulcerative colitis,treats
+DB01075,Diphenhydramine,DOID:4481,allergic rhinitis,treats
+DB00261,Anagrelide,DOID:2531,hematologic cancer,treats
+DB00091,Cyclosporine,DOID:9074,systemic lupus erythematosus,treats
+DB00763,Methimazole,DOID:12361,Graves' disease,treats
+DB01098,Rosuvastatin,DOID:3393,coronary artery disease,treats
+DB01197,Captopril,DOID:418,systemic scleroderma,treats
+DB00970,Dactinomycin,DOID:4045,muscle cancer,treats
+DB00399,Zoledronate,DOID:11476,osteoporosis,treats
+DB01029,Irbesartan,DOID:10763,hypertension,treats
+DB00631,Clofarabine,DOID:2531,hematologic cancer,treats
+DB00521,Carteolol,DOID:1686,glaucoma,treats
+DB01170,Guanethidine,DOID:10763,hypertension,treats
+DB00291,Chlorambucil,DOID:1612,breast cancer,treats
+DB00642,Pemetrexed,DOID:1324,lung cancer,treats
+DB00641,Simvastatin,DOID:3393,coronary artery disease,treats
+DB00178,Ramipril,DOID:9744,type 1 diabetes mellitus,treats
+DB00169,Cholecalciferol,DOID:11476,osteoporosis,treats
+DB01204,Mitoxantrone,DOID:1612,breast cancer,treats
+DB01045,Rifampicin,DOID:1024,leprosy,treats
+DB01101,Capecitabine,DOID:1612,breast cancer,treats
+DB00544,Fluorouracil,DOID:219,colon cancer,treats
+DB00635,Prednisone,DOID:10283,prostate cancer,treats
+DB00563,Methotrexate,DOID:1612,breast cancer,treats
+DB01204,Mitoxantrone,DOID:2377,multiple sclerosis,treats
+DB01202,Levetiracetam,DOID:1826,epilepsy syndrome,treats
+DB08877,Ruxolitinib,DOID:2531,hematologic cancer,treats
+DB01120,Gliclazide,DOID:9352,type 2 diabetes mellitus,treats
+DB00523,Alitretinoin,DOID:1192,peripheral nervous system neoplasm,treats
+DB00851,Dacarbazine,DOID:1909,melanoma,treats
+DB00270,Isradipine,DOID:10763,hypertension,treats
+DB00226,Guanadrel,DOID:10763,hypertension,treats
+DB08828,Vismodegib,DOID:4159,skin cancer,treats
+DB00982,Isotretinoin,DOID:1192,peripheral nervous system neoplasm,treats
+DB00937,Diethylpropion,DOID:9970,obesity,treats
+DB01177,Idarubicin,DOID:1612,breast cancer,treats
+DB00492,Fosinopril,DOID:10763,hypertension,treats
+DB00635,Prednisone,DOID:3310,atopic dermatitis,treats
+DB00688,Mycophenolate mofetil,DOID:8893,psoriasis,treats
+DB00651,Dyphylline,DOID:2841,asthma,treats
+DB00305,Mitomycin,DOID:11054,urinary bladder cancer,treats
+DB00762,Irinotecan,DOID:1793,pancreatic cancer,treats
+DB00515,Cisplatin,DOID:2994,germ cell cancer,treats
+DB01177,Idarubicin,DOID:2531,hematologic cancer,treats
+DB00973,Ezetimibe,DOID:1936,atherosclerosis,treats
+DB01410,Ciclesonide,DOID:2841,asthma,treats
+DB00224,Indinavir,DOID:635,acquired immunodeficiency syndrome,treats
+DB00864,Tacrolimus,DOID:3310,atopic dermatitis,treats
+DB00860,Prednisolone,DOID:2841,asthma,treats
+DB00775,Tirofiban,DOID:3393,coronary artery disease,treats
+DB00352,Tioguanine,DOID:2531,hematologic cancer,treats
+DB08881,Vemurafenib,DOID:1909,melanoma,treats
+DB00445,Epirubicin,DOID:10534,stomach cancer,treats
+DB00563,Methotrexate,DOID:10534,stomach cancer,treats
+DB00762,Irinotecan,DOID:1324,lung cancer,treats
+DB00570,Vinblastine,DOID:2531,hematologic cancer,treats
+DB08868,Fingolimod,DOID:2377,multiple sclerosis,treats
+DB00997,Doxorubicin,DOID:1324,lung cancer,treats
+DB00876,Eprosartan,DOID:10763,hypertension,treats
+DB00445,Epirubicin,DOID:1793,pancreatic cancer,treats
+DB01583,Liotrix,DOID:1459,hypothyroidism,treats
+DB00441,Gemcitabine,DOID:2531,hematologic cancer,treats
+DB00250,Dapsone,DOID:9074,systemic lupus erythematosus,treats
+DB01204,Mitoxantrone,DOID:1115,sarcoma,treats
+DB08816,Ticagrelor,DOID:3393,coronary artery disease,treats
+DB00398,Sorafenib,DOID:1781,thyroid cancer,treats
+DB00741,Hydrocortisone,DOID:7148,rheumatoid arthritis,treats
+DB00764,Mometasone,DOID:3310,atopic dermatitis,treats
+DB00178,Ramipril,DOID:10763,hypertension,treats
+DB00441,Gemcitabine,DOID:1612,breast cancer,treats
+DB01248,Docetaxel,DOID:1909,melanoma,treats
+DB00964,Apraclonidine,DOID:1686,glaucoma,treats
+DB00553,Methoxsalen,DOID:8893,psoriasis,treats
+DB01260,Desonide,DOID:3310,atopic dermatitis,treats
+DB00997,Doxorubicin,DOID:2531,hematologic cancer,treats
+DB00541,Vincristine,DOID:1115,sarcoma,treats
+DB00279,Liothyronine,DOID:1459,hypothyroidism,treats
+DB00649,Stavudine,DOID:635,acquired immunodeficiency syndrome,treats
+DB00630,Alendronate,DOID:5408,Paget's disease of bone,treats
+DB00290,Bleomycin,DOID:2994,germ cell cancer,treats
+DB00958,Carboplatin,DOID:1612,breast cancer,treats
+DB01273,Varenicline,DOID:0050742,nicotine dependence,treats
+DB01005,Hydroxyurea,DOID:11934,head and neck cancer,treats
+DB00328,Indomethacin,DOID:13189,gout,treats
+DB08871,Eribulin,DOID:1612,breast cancer,treats
+DB00331,Metformin,DOID:9352,type 2 diabetes mellitus,treats
+DB00691,Moexipril,DOID:10763,hypertension,treats
+DB00286,Conjugated Estrogens,DOID:11476,osteoporosis,treats
+DB00242,Cladribine,DOID:2531,hematologic cancer,treats
+DB00884,Risedronate,DOID:11476,osteoporosis,treats
+DB00169,Cholecalciferol,DOID:8577,ulcerative colitis,treats
+DB00773,Etoposide,DOID:1319,brain cancer,treats
+DB04572,Thiotepa,DOID:1612,breast cancer,treats
+DB00620,Triamcinolone,DOID:7147,ankylosing spondylitis,treats
+DB00755,Tretinoin,DOID:1192,peripheral nervous system neoplasm,treats
+DB00331,Metformin,DOID:11612,polycystic ovary syndrome,treats
+DB00997,Doxorubicin,DOID:263,kidney cancer,treats
+DB01077,Etidronic acid,DOID:5408,Paget's disease of bone,treats
+DB01274,Arformoterol,DOID:2841,asthma,treats
+DB01008,Busulfan,DOID:2531,hematologic cancer,treats
+DB00385,Valrubicin,DOID:11054,urinary bladder cancer,treats
+DB00741,Hydrocortisone,DOID:2841,asthma,treats
+DB00620,Triamcinolone,DOID:3310,atopic dermatitis,treats
+DB00773,Etoposide,DOID:2998,testicular cancer,treats
+DB00869,Dorzolamide,DOID:1686,glaucoma,treats
+DB00195,Betaxolol,DOID:1686,glaucoma,treats
+DB00441,Gemcitabine,DOID:1324,lung cancer,treats
+DB00091,Cyclosporine,DOID:8893,psoriasis,treats
+DB00445,Epirubicin,DOID:3571,liver cancer,treats
+DB00819,Acetazolamide,DOID:1686,glaucoma,treats
+DB00970,Dactinomycin,DOID:2174,ocular cancer,treats
+DB00905,Bimatoprost,DOID:1686,glaucoma,treats
+DB00880,Chlorothiazide,DOID:10763,hypertension,treats
+DB00695,Furosemide,DOID:12930,dilated cardiomyopathy,treats
+DB08860,Pitavastatin,DOID:3393,coronary artery disease,treats
+DB00515,Cisplatin,DOID:1324,lung cancer,treats
+DB00900,Didanosine,DOID:635,acquired immunodeficiency syndrome,treats
+DB00563,Methotrexate,DOID:8893,psoriasis,treats
+DB00773,Etoposide,DOID:4045,muscle cancer,treats
+DB00635,Prednisone,DOID:418,systemic scleroderma,treats
+DB00678,Losartan,DOID:10763,hypertension,treats
+DB00851,Dacarbazine,DOID:1793,pancreatic cancer,treats
+DB00445,Epirubicin,DOID:10283,prostate cancer,treats
+DB00678,Losartan,DOID:3393,coronary artery disease,treats
+DB00394,Beclomethasone,DOID:8893,psoriasis,treats
+DB00989,Rivastigmine,DOID:10652,Alzheimer's disease,treats
+DB00290,Bleomycin,DOID:4159,skin cancer,treats
+DB00550,Propylthiouracil,DOID:12361,Graves' disease,treats
+DB00762,Irinotecan,DOID:2531,hematologic cancer,treats
+DB00655,Estrone,DOID:10283,prostate cancer,treats
+DB00541,Vincristine,DOID:263,kidney cancer,treats
+DB00736,Esomeprazole,DOID:9206,Barrett's esophagus,treats
+DB00970,Dactinomycin,DOID:1115,sarcoma,treats
+DB00341,Cetirizine,DOID:4481,allergic rhinitis,treats
+DB01197,Captopril,DOID:10763,hypertension,treats
+DB01042,Melphalan,DOID:2531,hematologic cancer,treats
+DB01261,Sitagliptin,DOID:9352,type 2 diabetes mellitus,treats
+DB00195,Betaxolol,DOID:10763,hypertension,treats
+DB00959,Methylprednisolone,DOID:7148,rheumatoid arthritis,treats
+DB01014,Balsalazide,DOID:8778,Crohn's disease,treats
+DB00262,Carmustine,DOID:3070,malignant glioma,treats
+DB00396,Progesterone,DOID:363,uterine cancer,treats
+DB00773,Etoposide,DOID:1324,lung cancer,treats
+DB00361,Vinorelbine,DOID:2531,hematologic cancer,treats
+DB00762,Irinotecan,DOID:10534,stomach cancer,treats
+DB00741,Hydrocortisone,DOID:3310,atopic dermatitis,treats
+DB01005,Hydroxyurea,DOID:2531,hematologic cancer,treats
+DB00710,Ibandronate,DOID:11476,osteoporosis,treats
+DB00331,Metformin,DOID:14221,metabolic syndrome X,treats
+DB00421,Spironolactone,DOID:10763,hypertension,treats
+DB00851,Dacarbazine,DOID:2531,hematologic cancer,treats
+DB00718,Adefovir Dipivoxil,DOID:2043,hepatitis B,treats
+DB00966,Telmisartan,DOID:3393,coronary artery disease,treats
+DB01131,Proguanil,DOID:12365,malaria,treats
+DB00227,Lovastatin,DOID:1936,atherosclerosis,treats
+DB00273,Topiramate,DOID:1826,epilepsy syndrome,treats
+DB00322,Floxuridine,DOID:10534,stomach cancer,treats
+DB00851,Dacarbazine,DOID:4045,muscle cancer,treats
+DB00177,Valsartan,DOID:10763,hypertension,treats
+DB00958,Carboplatin,DOID:363,uterine cancer,treats
+DB00959,Methylprednisolone,DOID:9008,psoriatic arthritis,treats
+DB00773,Etoposide,DOID:2531,hematologic cancer,treats
+DB00262,Carmustine,DOID:1319,brain cancer,treats
+DB00839,Tolazamide,DOID:9352,type 2 diabetes mellitus,treats
+DB04572,Thiotepa,DOID:1115,sarcoma,treats
+DB00394,Beclomethasone,DOID:2841,asthma,treats
+DB01274,Arformoterol,DOID:3083,chronic obstructive pulmonary disease,treats
+DB00958,Carboplatin,DOID:2174,ocular cancer,treats
+DB01124,Tolbutamide,DOID:9352,type 2 diabetes mellitus,treats
+DB00262,Carmustine,DOID:0060073,lymphatic system cancer,treats
+DB00949,Felbamate,DOID:1826,epilepsy syndrome,treats
+DB00515,Cisplatin,DOID:2998,testicular cancer,treats
+DB00591,Fluocinolone Acetonide,DOID:8893,psoriasis,treats
+DB00997,Doxorubicin,DOID:10534,stomach cancer,treats
+DB00313,Valproic Acid,DOID:1826,epilepsy syndrome,treats
+DB00672,Chlorpropamide,DOID:9352,type 2 diabetes mellitus,treats
+DB01234,Dexamethasone,DOID:9074,systemic lupus erythematosus,treats
+DB00178,Ramipril,DOID:9352,type 2 diabetes mellitus,treats
+DB01248,Docetaxel,DOID:4159,skin cancer,treats
+DB00445,Epirubicin,DOID:1781,thyroid cancer,treats
+DB00373,Timolol,DOID:6364,migraine,treats
+DB01234,Dexamethasone,DOID:7147,ankylosing spondylitis,treats
+DB01590,Everolimus,DOID:263,kidney cancer,treats
+DB00620,Triamcinolone,DOID:9074,systemic lupus erythematosus,treats
+DB00471,Montelukast,DOID:2841,asthma,treats
+DB00773,Etoposide,DOID:10283,prostate cancer,treats
+DB01013,Clobetasol propionate,DOID:8893,psoriasis,treats
+DB01064,Isoprenaline,DOID:2841,asthma,treats
+DB01162,Terazosin,DOID:10763,hypertension,treats
+DB00977,Ethinyl Estradiol,DOID:10283,prostate cancer,treats
+DB00688,Mycophenolate mofetil,DOID:9074,systemic lupus erythematosus,treats
+DB00882,Clomifene,DOID:14227,azoospermia,treats
+DB01229,Paclitaxel,DOID:1324,lung cancer,treats
+DB00716,Nedocromil,DOID:2841,asthma,treats
+DB00773,Etoposide,DOID:1115,sarcoma,treats
+DB01041,Thalidomide,DOID:2531,hematologic cancer,treats
+DB00675,Tamoxifen,DOID:1793,pancreatic cancer,treats
+DB01200,Bromocriptine,DOID:9352,type 2 diabetes mellitus,treats
+DB00484,Brimonidine,DOID:1686,glaucoma,treats
+DB01132,Pioglitazone,DOID:9352,type 2 diabetes mellitus,treats
+DB08865,Crizotinib,DOID:1324,lung cancer,treats
+DB00659,Acamprosate,DOID:0050741,alcohol dependence,treats
+DB00277,Theophylline,DOID:2841,asthma,treats
+DB00620,Triamcinolone,DOID:7148,rheumatoid arthritis,treats
+DB01005,Hydroxyurea,DOID:1319,brain cancer,treats
+DB01168,Procarbazine,DOID:2531,hematologic cancer,treats
+DB00553,Methoxsalen,DOID:2531,hematologic cancer,treats
+DB00958,Carboplatin,DOID:5041,esophageal cancer,treats
+DB00441,Gemcitabine,DOID:11054,urinary bladder cancer,treats
+DB00443,Betamethasone,DOID:7147,ankylosing spondylitis,treats
+DB01075,Diphenhydramine,DOID:3310,atopic dermatitis,treats
+DB01586,Ursodeoxycholic acid,DOID:12236,primary biliary cirrhosis,treats
+DB00995,Auranofin,DOID:9008,psoriatic arthritis,treats
+DB01115,Nifedipine,DOID:10763,hypertension,treats
+DB00620,Triamcinolone,DOID:2531,hematologic cancer,treats
+DB00286,Conjugated Estrogens,DOID:10283,prostate cancer,treats
+DB01203,Nadolol,DOID:10763,hypertension,treats
+DB00959,Methylprednisolone,DOID:3310,atopic dermatitis,treats
+DB00762,Irinotecan,DOID:219,colon cancer,treats
+DB01259,Lapatinib,DOID:1612,breast cancer,treats
+DB01409,Tiotropium,DOID:2841,asthma,treats
+DB01222,Budesonide,DOID:2841,asthma,treats
+DB05812,Abiraterone,DOID:10283,prostate cancer,treats
+DB00701,Amprenavir,DOID:635,acquired immunodeficiency syndrome,treats
+DB00709,Lamivudine,DOID:2043,hepatitis B,treats
+DB00570,Vinblastine,DOID:11934,head and neck cancer,treats
+DB01656,Roflumilast,DOID:3083,chronic obstructive pulmonary disease,treats
+DB00985,Dimenhydrinate,DOID:3310,atopic dermatitis,treats
+DB01409,Tiotropium,DOID:3083,chronic obstructive pulmonary disease,treats
+DB00177,Valsartan,DOID:9352,type 2 diabetes mellitus,treats
+DB00563,Methotrexate,DOID:4045,muscle cancer,treats
+DB06777,Chenodeoxycholic acid,DOID:12236,primary biliary cirrhosis,treats
+DB00622,Nicardipine,DOID:10763,hypertension,treats
+DB01136,Carvedilol,DOID:10763,hypertension,treats
+DB00997,Doxorubicin,DOID:1192,peripheral nervous system neoplasm,treats
+DB00997,Doxorubicin,DOID:1793,pancreatic cancer,treats
+DB00244,Mesalazine,DOID:8778,Crohn's disease,treats
+DB00970,Dactinomycin,DOID:1909,melanoma,treats
+DB00563,Methotrexate,DOID:2531,hematologic cancer,treats
+DB00764,Mometasone,DOID:2841,asthma,treats
+DB01029,Irbesartan,DOID:9352,type 2 diabetes mellitus,treats
+DB01003,Cromoglicic acid,DOID:2841,asthma,treats
+DB00398,Sorafenib,DOID:263,kidney cancer,treats
+DB00800,Fenoldopam,DOID:10763,hypertension,treats
+DB00620,Triamcinolone,DOID:4481,allergic rhinitis,treats
+DB00563,Methotrexate,DOID:2998,testicular cancer,treats
+DB00629,Guanabenz,DOID:10763,hypertension,treats
+DB00441,Gemcitabine,DOID:263,kidney cancer,treats
+DB00774,Hydroflumethiazide,DOID:10763,hypertension,treats
+DB00782,Propantheline,DOID:4989,pancreatitis,treats
+DB00571,Propranolol,DOID:6364,migraine,treats
+DB00630,Alendronate,DOID:11476,osteoporosis,treats
+DB01024,Mycophenolic acid,DOID:418,systemic scleroderma,treats
+DB01248,Docetaxel,DOID:1612,breast cancer,treats
+DB00987,Cytarabine,DOID:2531,hematologic cancer,treats
+DB00938,Salmeterol,DOID:2841,asthma,treats
+DB01204,Mitoxantrone,DOID:2531,hematologic cancer,treats
+DB00999,Hydrochlorothiazide,DOID:10763,hypertension,treats
+DB00620,Triamcinolone,DOID:8893,psoriasis,treats
+DB00958,Carboplatin,DOID:2394,ovarian cancer,treats
+DB00480,Lenalidomide,DOID:2531,hematologic cancer,treats
+DB01204,Mitoxantrone,DOID:10283,prostate cancer,treats
+DB00443,Betamethasone,DOID:9008,psoriatic arthritis,treats
+DB00627,Niacin,DOID:3393,coronary artery disease,treats
+DB00563,Methotrexate,DOID:9008,psoriatic arthritis,treats
+DB00359,Sulfadiazine,DOID:12365,malaria,treats
+DB00700,Eplerenone,DOID:3393,coronary artery disease,treats
+DB01248,Docetaxel,DOID:1324,lung cancer,treats
+DB00305,Mitomycin,DOID:10534,stomach cancer,treats
+DB01006,Letrozole,DOID:1612,breast cancer,treats
+DB00958,Carboplatin,DOID:2998,testicular cancer,treats
+DB00997,Doxorubicin,DOID:1115,sarcoma,treats
+DB00947,Fulvestrant,DOID:1612,breast cancer,treats
+DB01181,Ifosfamide,DOID:2994,germ cell cancer,treats
+DB00563,Methotrexate,DOID:418,systemic scleroderma,treats
+DB00635,Prednisone,DOID:3083,chronic obstructive pulmonary disease,treats
+DB00544,Fluorouracil,DOID:1793,pancreatic cancer,treats
+DB00997,Doxorubicin,DOID:1781,thyroid cancer,treats
+DB00983,Formoterol,DOID:2841,asthma,treats
+DB00187,Esmolol,DOID:10763,hypertension,treats
+DB00421,Spironolactone,DOID:12930,dilated cardiomyopathy,treats
+DB00958,Carboplatin,DOID:11054,urinary bladder cancer,treats
+DB00443,Betamethasone,DOID:4481,allergic rhinitis,treats
+DB00977,Ethinyl Estradiol,DOID:11476,osteoporosis,treats
+DB00851,Dacarbazine,DOID:1192,peripheral nervous system neoplasm,treats
+DB00169,Cholecalciferol,DOID:8893,psoriasis,treats
+DB00959,Methylprednisolone,DOID:2841,asthma,treats
+DB00776,Oxcarbazepine,DOID:1826,epilepsy syndrome,treats
+DB00126,Vitamin C,DOID:10283,prostate cancer,treats
+DB00795,Sulfasalazine,DOID:8778,Crohn's disease,treats
+DB00544,Fluorouracil,DOID:11054,urinary bladder cancer,treats
+DB00443,Betamethasone,DOID:8893,psoriasis,treats
+DB00180,Flunisolide,DOID:2841,asthma,treats
+DB00291,Chlorambucil,DOID:2394,ovarian cancer,treats
+DB00563,Methotrexate,DOID:7147,ankylosing spondylitis,treats
+DB00258,Calcium Acetate,DOID:11476,osteoporosis,treats
+DB01196,Estramustine,DOID:10283,prostate cancer,treats
+DB00313,Valproic Acid,DOID:6364,migraine,treats
+DB00153,Ergocalciferol,DOID:7148,rheumatoid arthritis,treats
+DB00444,Teniposide,DOID:0060073,lymphatic system cancer,treats
+DB02300,Calcipotriol,DOID:8893,psoriasis,treats
+DB00970,Dactinomycin,DOID:363,uterine cancer,treats
+DB00264,Metoprolol,DOID:10763,hypertension,treats
+DB06287,Temsirolimus,DOID:263,kidney cancer,treats
+DB01181,Ifosfamide,DOID:2998,testicular cancer,treats
+DB00552,Pentostatin,DOID:2531,hematologic cancer,treats
+DB01185,Fluoxymesterone,DOID:1612,breast cancer,treats
+DB00973,Ezetimibe,DOID:3393,coronary artery disease,treats
+DB00290,Bleomycin,DOID:0060073,lymphatic system cancer,treats
+DB00799,Tazarotene,DOID:8893,psoriasis,treats
+DB00563,Methotrexate,DOID:0060073,lymphatic system cancer,treats
+DB00722,Lisinopril,DOID:12930,dilated cardiomyopathy,treats
+DB01001,Salbutamol,DOID:2841,asthma,treats
+DB00515,Cisplatin,DOID:1192,peripheral nervous system neoplasm,treats
+DB00014,Goserelin,DOID:10283,prostate cancer,treats
+DB00539,Toremifene,DOID:1612,breast cancer,treats
+DB00773,Etoposide,DOID:2994,germ cell cancer,treats
+DB01268,Sunitinib,DOID:1793,pancreatic cancer,treats
+DB00436,Bendroflumethiazide,DOID:10763,hypertension,treats
+DB01156,Bupropion,DOID:9970,obesity,treats
+DB00909,Zonisamide,DOID:1826,epilepsy syndrome,treats
+DB00958,Carboplatin,DOID:1319,brain cancer,treats
+DB00275,Olmesartan,DOID:3393,coronary artery disease,treats
+DB01234,Dexamethasone,DOID:2841,asthma,treats
+DB00445,Epirubicin,DOID:1115,sarcoma,treats
+DB00091,Cyclosporine,DOID:1312,focal segmental glomerulosclerosis,treats
+DB01229,Paclitaxel,DOID:263,kidney cancer,treats
+DB00575,Clonidine,DOID:10763,hypertension,treats
+DB02546,Vorinostat,DOID:2531,hematologic cancer,treats
+DB00449,Dipivefrin,DOID:1686,glaucoma,treats
+DB00291,Chlorambucil,DOID:2531,hematologic cancer,treats
+DB00544,Fluorouracil,DOID:1612,breast cancer,treats
+DB00445,Epirubicin,DOID:2531,hematologic cancer,treats
+DB00594,Amiloride,DOID:10763,hypertension,treats
+DB00443,Betamethasone,DOID:7148,rheumatoid arthritis,treats
+DB00361,Vinorelbine,DOID:1612,breast cancer,treats
+DB00881,Quinapril,DOID:10763,hypertension,treats
+DB00635,Prednisone,DOID:8577,ulcerative colitis,treats
+DB00503,Ritonavir,DOID:635,acquired immunodeficiency syndrome,treats
+DB01190,Clindamycin,DOID:12365,malaria,treats
+DB00519,Trandolapril,DOID:3393,coronary artery disease,treats
+DB00968,Methyldopa,DOID:10763,hypertension,treats
+DB00310,Chlorthalidone,DOID:10763,hypertension,treats
+DB00515,Cisplatin,DOID:11054,urinary bladder cancer,treats
+DB01206,Lomustine,DOID:1319,brain cancer,treats
+DB00675,Tamoxifen,DOID:1612,breast cancer,treats
+DB01101,Capecitabine,DOID:10283,prostate cancer,treats
+DB00764,Mometasone,DOID:418,systemic scleroderma,treats
+DB00635,Prednisone,DOID:9074,systemic lupus erythematosus,treats
+DB01042,Melphalan,DOID:1612,breast cancer,treats
+DB00851,Dacarbazine,DOID:4159,skin cancer,treats
+DB01217,Anastrozole,DOID:1612,breast cancer,treats
+DB00795,Sulfasalazine,DOID:7147,ankylosing spondylitis,treats
+DB01076,Atorvastatin,DOID:10763,hypertension,treats
+DB01346,Quinidine barbiturate,DOID:12365,malaria,treats
+DB01001,Salbutamol,DOID:3083,chronic obstructive pulmonary disease,treats
+DB01097,Leflunomide,DOID:7148,rheumatoid arthritis,treats
+DB00350,Minoxidil,DOID:10763,hypertension,treats
+DB00290,Bleomycin,DOID:2531,hematologic cancer,treats
+DB05294,Vandetanib,DOID:1781,thyroid cancer,treats
+DB00549,Zafirlukast,DOID:2841,asthma,treats
+DB01254,Dasatinib,DOID:2531,hematologic cancer,treats
+DB00563,Methotrexate,DOID:11054,urinary bladder cancer,treats
+DB01105,Sibutramine,DOID:9970,obesity,treats
+DB00853,Temozolomide,DOID:4159,skin cancer,treats
+DB00347,Trimethadione,DOID:1826,epilepsy syndrome,treats
+DB00678,Losartan,DOID:9352,type 2 diabetes mellitus,treats
+DB00920,Ketotifen,DOID:2841,asthma,treats
+DB00188,Bortezomib,DOID:2531,hematologic cancer,treats
+DB00661,Verapamil,DOID:10763,hypertension,treats
+DB00703,Methazolamide,DOID:1686,glaucoma,treats
+DB01222,Budesonide,DOID:8577,ulcerative colitis,treats
+DB00575,Clonidine,DOID:1686,glaucoma,treats
+DB00884,Risedronate,DOID:5408,Paget's disease of bone,treats
+DB00584,Enalapril,DOID:10763,hypertension,treats
+DB04574,Estropipate,DOID:11476,osteoporosis,treats
+DB00959,Methylprednisolone,DOID:4481,allergic rhinitis,treats
+DB01016,Glyburide,DOID:11714,gestational diabetes,treats
+DB00620,Triamcinolone,DOID:9008,psoriatic arthritis,treats
+DB01250,Olsalazine,DOID:8577,ulcerative colitis,treats
+DB00220,Nelfinavir,DOID:635,acquired immunodeficiency syndrome,treats
+DB00444,Teniposide,DOID:1324,lung cancer,treats
+DB00468,Quinine,DOID:12365,malaria,treats
+DB00851,Dacarbazine,DOID:1115,sarcoma,treats
+DB00695,Furosemide,DOID:3393,coronary artery disease,treats
+DB00674,Galantamine,DOID:10652,Alzheimer's disease,treats
+DB00544,Fluorouracil,DOID:11934,head and neck cancer,treats
+DB01234,Dexamethasone,DOID:8893,psoriasis,treats
+DB00337,Pimecrolimus,DOID:3310,atopic dermatitis,treats
+DB00860,Prednisolone,DOID:3310,atopic dermatitis,treats
+DB05039,Indacaterol,DOID:2841,asthma,treats
+DB00442,Entecavir,DOID:2043,hepatitis B,treats
+DB00291,Chlorambucil,DOID:2998,testicular cancer,treats
+DB00865,Benzphetamine,DOID:9970,obesity,treats
+DB00563,Methotrexate,DOID:7148,rheumatoid arthritis,treats
+DB00104,Octreotide,DOID:3277,thymus cancer,treats
+DB04845,Ixabepilone,DOID:1612,breast cancer,treats
+DB01039,Fenofibrate,DOID:3393,coronary artery disease,treats
+DB00908,Quinidine,DOID:12365,malaria,treats
+DB00443,Betamethasone,DOID:2377,multiple sclerosis,treats
+DB00570,Vinblastine,DOID:1324,lung cancer,treats
+DB06699,Degarelix,DOID:10283,prostate cancer,treats
+DB01016,Glyburide,DOID:9352,type 2 diabetes mellitus,treats
+DB01076,Atorvastatin,DOID:3393,coronary artery disease,treats
+DB01073,Fludarabine,DOID:0060073,lymphatic system cancer,treats
+DB00983,Formoterol,DOID:3083,chronic obstructive pulmonary disease,treats
+DB00530,Erlotinib,DOID:1793,pancreatic cancer,treats
+DB00287,Travoprost,DOID:1686,glaucoma,treats
+DB00519,Trandolapril,DOID:10763,hypertension,treats
+DB01083,Orlistat,DOID:9970,obesity,treats
+DB06218,Lacosamide,DOID:1826,epilepsy syndrome,treats
+DB00722,Lisinopril,DOID:3393,coronary artery disease,treats
+DB00434,Cyproheptadine,DOID:4481,allergic rhinitis,treats
+DB00541,Vincristine,DOID:0060073,lymphatic system cancer,treats
+DB01047,Fluocinonide,DOID:8893,psoriasis,treats
+DB01024,Mycophenolic acid,DOID:8893,psoriasis,treats
+DB00262,Carmustine,DOID:1909,melanoma,treats
+DB00997,Doxorubicin,DOID:1612,breast cancer,treats
+DB01098,Rosuvastatin,DOID:1936,atherosclerosis,treats
+DB00437,Allopurinol,DOID:13189,gout,treats
+DB00227,Lovastatin,DOID:3393,coronary artery disease,treats
+DB04861,Nebivolol,DOID:10763,hypertension,treats
+DB00307,Bexarotene,DOID:2531,hematologic cancer,treats
+DB06589,Pazopanib,DOID:263,kidney cancer,treats
+DB00762,Irinotecan,DOID:1612,breast cancer,treats
+DB00284,Acarbose,DOID:9352,type 2 diabetes mellitus,treats
+DB00481,Raloxifene,DOID:11476,osteoporosis,treats
+DB00958,Carboplatin,DOID:184,bone cancer,treats
+DB00451,Levothyroxine,DOID:1459,hypothyroidism,treats
+DB01097,Leflunomide,DOID:418,systemic scleroderma,treats
+DB00993,Azathioprine,DOID:9074,systemic lupus erythematosus,treats
+DB01601,Lopinavir,DOID:635,acquired immunodeficiency syndrome,treats
+DB00860,Prednisolone,DOID:7147,ankylosing spondylitis,treats
+DB01197,Captopril,DOID:3393,coronary artery disease,treats
+DB00250,Dapsone,DOID:1024,leprosy,treats
+DB01080,Vigabatrin,DOID:1826,epilepsy syndrome,treats
+DB01359,Penbutolol,DOID:3393,coronary artery disease,treats
+DB00349,Clobazam,DOID:1826,epilepsy syndrome,treats
+DB00641,Simvastatin,DOID:1936,atherosclerosis,treats
+DB00445,Epirubicin,DOID:2998,testicular cancer,treats
+DB00970,Dactinomycin,DOID:2994,germ cell cancer,treats
+DB00773,Etoposide,DOID:363,uterine cancer,treats
+DB00741,Hydrocortisone,DOID:8893,psoriasis,treats
+DB00853,Temozolomide,DOID:1909,melanoma,treats
+DB00563,Methotrexate,DOID:184,bone cancer,treats
+DB00705,Delavirdine,DOID:635,acquired immunodeficiency syndrome,treats
+DB00997,Doxorubicin,DOID:2394,ovarian cancer,treats
+DB01144,Diclofenamide,DOID:1686,glaucoma,treats
+DB01210,Levobunolol,DOID:1686,glaucoma,treats
+DB00741,Hydrocortisone,DOID:9074,systemic lupus erythematosus,treats
+DB00970,Dactinomycin,DOID:4159,skin cancer,treats
+DB00254,Doxycycline,DOID:12365,malaria,treats
+DB01043,Memantine,DOID:10652,Alzheimer's disease,treats
+DB01234,Dexamethasone,DOID:3310,atopic dermatitis,treats
+DB01241,Gemfibrozil,DOID:3393,coronary artery disease,treats
+DB01014,Balsalazide,DOID:8577,ulcerative colitis,treats
+DB00570,Vinblastine,DOID:263,kidney cancer,treats
+DB01048,Abacavir,DOID:635,acquired immunodeficiency syndrome,treats
+DB00495,Zidovudine,DOID:635,acquired immunodeficiency syndrome,treats
+DB01223,Aminophylline,DOID:3083,chronic obstructive pulmonary disease,treats
+DB01067,Glipizide,DOID:9352,type 2 diabetes mellitus,treats
+DB01223,Aminophylline,DOID:2841,asthma,treats
+DB00412,Rosiglitazone,DOID:9352,type 2 diabetes mellitus,treats
+DB00860,Prednisolone,DOID:9008,psoriatic arthritis,treats
+DB01174,Phenobarbital,DOID:1826,epilepsy syndrome,treats
+DB00455,Loratadine,DOID:2841,asthma,treats
+DB01097,Leflunomide,DOID:9074,systemic lupus erythematosus,treats
+DB05389,WF10,DOID:2841,asthma,treats
+DB00091,Cyclosporine,DOID:7148,rheumatoid arthritis,treats
+DB01234,Dexamethasone,DOID:2531,hematologic cancer,treats
+DB01291,Pirbuterol,DOID:2841,asthma,treats
+DB01073,Fludarabine,DOID:2531,hematologic cancer,treats
+DB00888,Mechlorethamine,DOID:0060073,lymphatic system cancer,treats
+DB01206,Lomustine,DOID:2531,hematologic cancer,treats
+DB00731,Nateglinide,DOID:9352,type 2 diabetes mellitus,treats
+DB00635,Prednisone,DOID:13189,gout,treats
+DB01032,Probenecid,DOID:13189,gout,treats
+DB00384,Triamterene,DOID:10763,hypertension,treats
+DB00471,Montelukast,DOID:3083,chronic obstructive pulmonary disease,treats
+DB00843,Donepezil,DOID:10652,Alzheimer's disease,treats
+DB01394,Colchicine,DOID:12236,primary biliary cirrhosis,treats
+DB06201,Rufinamide,DOID:1826,epilepsy syndrome,treats
+DB00457,Prazosin,DOID:10763,hypertension,treats
+DB01577,Methamphetamine,DOID:9970,obesity,treats
+DB00317,Gefitinib,DOID:1324,lung cancer,treats
+DB00945,Acetylsalicylic acid,DOID:3393,coronary artery disease,treats
+DB00773,Etoposide,DOID:11054,urinary bladder cancer,treats
+DB00321,Amitriptyline,DOID:6364,migraine,treats
+DB00619,Imatinib,DOID:2531,hematologic cancer,treats
+DB00588,Fluticasone Propionate,DOID:2841,asthma,treats
+DB00136,Calcitriol,DOID:8893,psoriasis,treats
+DB00722,Lisinopril,DOID:418,systemic scleroderma,treats
+DB00584,Enalapril,DOID:3393,coronary artery disease,treats
+DB00635,Prednisone,DOID:8893,psoriasis,treats
+DB04572,Thiotepa,DOID:11054,urinary bladder cancer,treats
+DB00990,Exemestane,DOID:1612,breast cancer,treats
+DB00397,Phenylpropanolamine,DOID:9970,obesity,treats
+DB00541,Vincristine,DOID:4045,muscle cancer,treats
+DB00788,Naproxen,DOID:13189,gout,treats
+DB00860,Prednisolone,DOID:8577,ulcerative colitis,treats
+DB00136,Calcitriol,DOID:11476,osteoporosis,treats
+DB01033,Mercaptopurine,DOID:8577,ulcerative colitis,treats
+DB00343,Diltiazem,DOID:10763,hypertension,treats
+DB00997,Doxorubicin,DOID:10283,prostate cancer,treats
+DB01085,Pilocarpine,DOID:1686,glaucoma,treats
+DB00790,Perindopril,DOID:3393,coronary artery disease,treats
+DB00722,Lisinopril,DOID:10763,hypertension,treats
+DB01041,Thalidomide,DOID:1024,leprosy,treats
+DB00993,Azathioprine,DOID:2377,multiple sclerosis,treats
+DB00178,Ramipril,DOID:3393,coronary artery disease,treats
+DB01234,Dexamethasone,DOID:7148,rheumatoid arthritis,treats
+DB00445,Epirubicin,DOID:1192,peripheral nervous system neoplasm,treats
+DB00563,Methotrexate,DOID:2994,germ cell cancer,treats
+DB00571,Propranolol,DOID:10763,hypertension,treats
+DB01248,Docetaxel,DOID:1793,pancreatic cancer,treats
+DB01248,Docetaxel,DOID:2394,ovarian cancer,treats
+DB01248,Docetaxel,DOID:10283,prostate cancer,treats
+DB00445,Epirubicin,DOID:363,uterine cancer,treats
+DB00443,Betamethasone,DOID:9074,systemic lupus erythematosus,treats
+DB00987,Cytarabine,DOID:0060073,lymphatic system cancer,treats
+DB00542,Benazepril,DOID:10763,hypertension,treats
+DB00014,Goserelin,DOID:1612,breast cancer,treats
+DB01128,Bicalutamide,DOID:10283,prostate cancer,treats
+DB00373,Timolol,DOID:1686,glaucoma,treats
+DB01033,Mercaptopurine,DOID:2531,hematologic cancer,treats
+DB01101,Capecitabine,DOID:219,colon cancer,treats
+DB01077,Etidronic acid,DOID:11476,osteoporosis,treats
+DB01248,Docetaxel,DOID:11934,head and neck cancer,treats
+DB00523,Alitretinoin,DOID:2531,hematologic cancer,treats
+DB00995,Auranofin,DOID:7148,rheumatoid arthritis,treats
+DB00635,Prednisone,DOID:7147,ankylosing spondylitis,treats
+DB00796,Candesartan,DOID:10763,hypertension,treats
+DB00398,Sorafenib,DOID:3571,liver cancer,treats
+DB00635,Prednisone,DOID:2377,multiple sclerosis,treats
+DB08882,Linagliptin,DOID:9352,type 2 diabetes mellitus,treats
+DB00997,Doxorubicin,DOID:11054,urinary bladder cancer,treats
+DB06697,Artemether,DOID:12365,malaria,treats
+DB01030,Topotecan,DOID:4362,cervical cancer,treats
+DB00806,Pentoxifylline,DOID:12365,malaria,treats
+DB00819,Acetazolamide,DOID:1826,epilepsy syndrome,treats
+DB00740,Riluzole,DOID:332,amyotrophic lateral sclerosis,treats
+DB00683,Midazolam,DOID:1826,epilepsy syndrome,treats
+DB00553,Methoxsalen,DOID:12306,vitiligo,treats
+DB01030,Topotecan,DOID:2394,ovarian cancer,treats
+DB06772,Cabazitaxel,DOID:10283,prostate cancer,treats
+DB01083,Orlistat,DOID:9352,type 2 diabetes mellitus,treats
+DB00790,Perindopril,DOID:10763,hypertension,treats
+DB00153,Ergocalciferol,DOID:11476,osteoporosis,treats
+DB00515,Cisplatin,DOID:184,bone cancer,treats
+DB00966,Telmisartan,DOID:10763,hypertension,treats
+DB00903,Ethacrynic acid,DOID:10763,hypertension,treats
+DB00709,Lamivudine,DOID:635,acquired immunodeficiency syndrome,treats
+DB00818,Propofol,DOID:1826,epilepsy syndrome,treats
+DB00361,Vinorelbine,DOID:1324,lung cancer,treats
+DB00459,Acitretin,DOID:8893,psoriasis,treats
+DB01234,Dexamethasone,DOID:4481,allergic rhinitis,treats
+DB00411,Carbachol,DOID:1686,glaucoma,treats
+DB00221,Isoetarine,DOID:2841,asthma,treats
+DB00806,Pentoxifylline,DOID:418,systemic scleroderma,treats
+DB00262,Carmustine,DOID:2531,hematologic cancer,treats
+DB00959,Methylprednisolone,DOID:9074,systemic lupus erythematosus,treats
+DB00590,Doxazosin,DOID:10763,hypertension,treats
+DB01229,Paclitaxel,DOID:1612,breast cancer,treats
+DB00509,Dextrothyroxine,DOID:1459,hypothyroidism,treats
+DB00563,Methotrexate,DOID:219,colon cancer,treats
+DB00530,Erlotinib,DOID:263,kidney cancer,treats
+DB00993,Azathioprine,DOID:8778,Crohn's disease,treats
+DB01018,Guanfacine,DOID:10763,hypertension,treats
+DB01042,Melphalan,DOID:2394,ovarian cancer,treats
+DB00996,Gabapentin,DOID:1826,epilepsy syndrome,treats
+DB00620,Triamcinolone,DOID:2841,asthma,treats
+DB00999,Hydrochlorothiazide,DOID:585,nephrolithiasis,treats
+DB00744,Zileuton,DOID:2841,asthma,treats
+DB00524,Metolazone,DOID:10763,hypertension,treats
+DB00741,Hydrocortisone,DOID:13189,gout,treats
+DB01268,Sunitinib,DOID:263,kidney cancer,treats
+DB00238,Nevirapine,DOID:635,acquired immunodeficiency syndrome,treats
+DB00795,Sulfasalazine,DOID:7148,rheumatoid arthritis,treats
+DB01229,Paclitaxel,DOID:2394,ovarian cancer,treats
+DB00700,Eplerenone,DOID:10763,hypertension,treats
+DB00373,Timolol,DOID:10763,hypertension,treats
+DB00859,Penicillamine,DOID:7148,rheumatoid arthritis,treats
+DB00860,Prednisolone,DOID:13189,gout,treats
+DB00273,Topiramate,DOID:6364,migraine,treats
+DB00724,Imiquimod,DOID:4159,skin cancer,treats
+DB00515,Cisplatin,DOID:5041,esophageal cancer,treats
+DB04868,Nilotinib,DOID:2531,hematologic cancer,treats
+DB00970,Dactinomycin,DOID:1192,peripheral nervous system neoplasm,treats
+DB01194,Brinzolamide,DOID:1686,glaucoma,treats
+DB00443,Betamethasone,DOID:8577,ulcerative colitis,treats
+DB00175,Pravastatin,DOID:1936,atherosclerosis,treats
+DB00570,Vinblastine,DOID:1612,breast cancer,treats
+DB00997,Doxorubicin,DOID:2998,testicular cancer,treats
+DB00625,Efavirenz,DOID:635,acquired immunodeficiency syndrome,treats
+DB00635,Prednisone,DOID:8778,Crohn's disease,treats
+DB00184,Nicotine,DOID:8577,ulcerative colitis,treats
+DB00704,Naltrexone,DOID:0050741,alcohol dependence,treats
+DB00959,Methylprednisolone,DOID:13189,gout,treats
+DB00871,Terbutaline,DOID:2841,asthma,treats
+DB00373,Timolol,DOID:3393,coronary artery disease,treats
+DB00563,Methotrexate,DOID:5041,esophageal cancer,treats
+DB00214,Torasemide,DOID:10763,hypertension,treats
+DB00275,Olmesartan,DOID:10763,hypertension,treats
+DB00768,Olopatadine,DOID:4481,allergic rhinitis,treats
+DB00627,Niacin,DOID:1936,atherosclerosis,treats
+DB00860,Prednisolone,DOID:7148,rheumatoid arthritis,treats
+DB00981,Physostigmine,DOID:1686,glaucoma,treats
+DB00860,Prednisolone,DOID:9074,systemic lupus erythematosus,treats
+DB01579,Phendimetrazine,DOID:9970,obesity,treats
+DB00230,Pregabalin,DOID:1826,epilepsy syndrome,treats
+DB00912,Repaglinide,DOID:9352,type 2 diabetes mellitus,treats
+DB00443,Betamethasone,DOID:3310,atopic dermatitis,treats
+DB01214,Metipranolol,DOID:1686,glaucoma,treats
+DB00481,Raloxifene,DOID:1612,breast cancer,treats
+DB00758,Clopidogrel,DOID:3393,coronary artery disease,treats
+DB01030,Topotecan,DOID:1192,peripheral nervous system neoplasm,treats
+DB01005,Hydroxyurea,DOID:8893,psoriasis,treats
+DB00945,Acetylsalicylic acid,DOID:13378,Kawasaki disease,treats
+DB00242,Cladribine,DOID:2377,multiple sclerosis,treats
+DB00997,Doxorubicin,DOID:4045,muscle cancer,treats
+DB00993,Azathioprine,DOID:7148,rheumatoid arthritis,treats
+DB00620,Triamcinolone,DOID:2377,multiple sclerosis,treats
+DB01133,Tiludronate,DOID:5408,Paget's disease of bone,treats
+DB01234,Dexamethasone,DOID:8577,ulcerative colitis,treats
+DB01204,Mitoxantrone,DOID:0060073,lymphatic system cancer,treats
+DB00175,Pravastatin,DOID:3393,coronary artery disease,treats
+DB00515,Cisplatin,DOID:2531,hematologic cancer,treats
+DB00598,Labetalol,DOID:10763,hypertension,treats
+DB00959,Methylprednisolone,DOID:8577,ulcerative colitis,treats
+DB00445,Epirubicin,DOID:2394,ovarian cancer,treats
+DB00794,Primidone,DOID:1826,epilepsy syndrome,treats
+DB00273,Topiramate,DOID:9970,obesity,treats
+DB00499,Flutamide,DOID:10283,prostate cancer,treats
+DB04572,Thiotepa,DOID:2531,hematologic cancer,treats
+DB00282,Pamidronate,DOID:11476,osteoporosis,treats
+DB08866,Estradiol valerate/Dienogest,DOID:10283,prostate cancer,treats
+DB00541,Vincristine,DOID:1192,peripheral nervous system neoplasm,treats
+DB00887,Bumetanide,DOID:10763,hypertension,treats
+DB00970,Dactinomycin,DOID:2998,testicular cancer,treats
+DB00635,Prednisone,DOID:9008,psoriatic arthritis,treats
+DB00361,Vinorelbine,DOID:2394,ovarian cancer,treats
+DB00564,Carbamazepine,DOID:1826,epilepsy syndrome,treats
+DB00967,Desloratadine,DOID:4481,allergic rhinitis,treats
+DB00695,Furosemide,DOID:10763,hypertension,treats
+DB00399,Zoledronate,DOID:5408,Paget's disease of bone,treats
+DB00741,Hydrocortisone,DOID:8577,ulcerative colitis,treats
+DB00620,Triamcinolone,DOID:986,alopecia areata,treats
+DB00996,Gabapentin,DOID:6364,migraine,treats
+DB00853,Temozolomide,DOID:1319,brain cancer,treats
+DB00332,Ipratropium bromide,DOID:2841,asthma,treats
+DB00424,Hyoscyamine,DOID:4989,pancreatitis,treats
+DB00455,Loratadine,DOID:4481,allergic rhinitis,treats
+DB00829,Diazepam,DOID:1826,epilepsy syndrome,treats
+DB00445,Epirubicin,DOID:1612,breast cancer,treats
+DB00822,Disulfiram,DOID:0050741,alcohol dependence,treats
+DB01033,Mercaptopurine,DOID:8778,Crohn's disease,treats
+DB01248,Docetaxel,DOID:10534,stomach cancer,treats
+DB00180,Flunisolide,DOID:4481,allergic rhinitis,treats
+DB00252,Phenytoin,DOID:1826,epilepsy syndrome,treats
+DB00997,Doxorubicin,DOID:3571,liver cancer,treats
+DB01042,Melphalan,DOID:1192,peripheral nervous system neoplasm,treats
+DB00959,Methylprednisolone,DOID:2377,multiple sclerosis,treats
+DB01351,Amobarbital,DOID:1826,epilepsy syndrome,treats
+DB01193,Acebutolol,DOID:10763,hypertension,treats
+DB00443,Betamethasone,DOID:2841,asthma,treats
+DB00381,Amlodipine,DOID:10763,hypertension,treats
+DB00657,Mecamylamine,DOID:10763,hypertension,treats
+DB00570,Vinblastine,DOID:2994,germ cell cancer,treats
+DB01359,Penbutolol,DOID:10763,hypertension,treats
+DB00445,Epirubicin,DOID:184,bone cancer,treats
+DB08906,Fluticasone furoate,DOID:2841,asthma,treats
+DB00541,Vincristine,DOID:219,colon cancer,treats
+DB00694,Daunorubicin,DOID:2531,hematologic cancer,treats
+DB00471,Montelukast,DOID:4481,allergic rhinitis,treats
+DB00635,Prednisone,DOID:7148,rheumatoid arthritis,treats
+DB00544,Fluorouracil,DOID:4159,skin cancer,treats
+DB00860,Prednisolone,DOID:2377,multiple sclerosis,treats
+DB00445,Epirubicin,DOID:11054,urinary bladder cancer,treats
+DB01234,Dexamethasone,DOID:2377,multiple sclerosis,treats
+DB01168,Procarbazine,DOID:1319,brain cancer,treats
+DB00282,Pamidronate,DOID:5408,Paget's disease of bone,treats
+DB00783,Estradiol,DOID:11476,osteoporosis,treats
+DB00816,Orciprenaline,DOID:2841,asthma,treats
+DB00860,Prednisolone,DOID:8893,psoriasis,treats
+DB01265,Telbivudine,DOID:2043,hepatitis B,treats
+DB01030,Topotecan,DOID:1324,lung cancer,treats
+DB01101,Capecitabine,DOID:5041,esophageal cancer,treats
+DB00603,Medroxyprogesterone Acetate,DOID:363,uterine cancer,treats
+DB01175,Escitalopram,DOID:3312,bipolar disorder,palliates
+DB00321,Amitriptyline,DOID:7148,rheumatoid arthritis,palliates
+DB00176,Fluvoxamine,DOID:594,panic disorder,palliates
+DB01037,Selegiline,DOID:10652,Alzheimer's disease,palliates
+DB00945,Acetylsalicylic acid,DOID:9074,systemic lupus erythematosus,palliates
+DB01100,Pimozide,DOID:11119,Gilles de la Tourette syndrome,palliates
+DB00328,Indomethacin,DOID:7147,ankylosing spondylitis,palliates
+DB00218,Moxifloxacin,DOID:3083,chronic obstructive pulmonary disease,palliates
+DB00989,Rivastigmine,DOID:14330,Parkinson's disease,palliates
+DB00203,Sildenafil,DOID:418,systemic scleroderma,palliates
+DB00500,Tolmetin,DOID:8398,osteoarthritis,palliates
+DB01224,Quetiapine,DOID:12849,autistic disorder,palliates
+DB01104,Sertraline,DOID:5419,schizophrenia,palliates
+DB00996,Gabapentin,DOID:9074,systemic lupus erythematosus,palliates
+DB01175,Escitalopram,DOID:1595,endogenous depression,palliates
+DB00104,Octreotide,DOID:4989,pancreatitis,palliates
+DB00741,Hydrocortisone,DOID:263,kidney cancer,palliates
+DB01267,Paliperidone,DOID:5419,schizophrenia,palliates
+DB01068,Clonazepam,DOID:14330,Parkinson's disease,palliates
+DB01200,Bromocriptine,DOID:14330,Parkinson's disease,palliates
+DB00692,Phentolamine,DOID:10763,hypertension,palliates
+DB00402,Eszopiclone,DOID:2377,multiple sclerosis,palliates
+DB00810,Biperiden,DOID:14330,Parkinson's disease,palliates
+DB01063,Acetophenazine,DOID:5419,schizophrenia,palliates
+DB01255,Lisdexamfetamine,DOID:1094,attention deficit hyperactivity disorder,palliates
+DB00215,Citalopram,DOID:1595,endogenous depression,palliates
+DB00230,Pregabalin,DOID:9074,systemic lupus erythematosus,palliates
+DB00500,Tolmetin,DOID:7148,rheumatoid arthritis,palliates
+DB00980,Ramelteon,DOID:14330,Parkinson's disease,palliates
+DB00281,Lidocaine,DOID:3393,coronary artery disease,palliates
+DB00404,Alprazolam,DOID:594,panic disorder,palliates
+DB00402,Eszopiclone,DOID:5419,schizophrenia,palliates
+DB01001,Salbutamol,DOID:4481,allergic rhinitis,palliates
+DB00985,Dimenhydrinate,DOID:5419,schizophrenia,palliates
+DB01224,Quetiapine,DOID:3312,bipolar disorder,palliates
+DB00829,Diazepam,DOID:594,panic disorder,palliates
+DB00540,Nortriptyline,DOID:1094,attention deficit hyperactivity disorder,palliates
+DB01149,Nefazodone,DOID:1595,endogenous depression,palliates
+DB00554,Piroxicam,DOID:8398,osteoarthritis,palliates
+DB00860,Prednisolone,DOID:0050156,idiopathic pulmonary fibrosis,palliates
+DB00169,Cholecalciferol,DOID:784,chronic kidney failure,palliates
+DB01037,Selegiline,DOID:1595,endogenous depression,palliates
+DB01156,Bupropion,DOID:1094,attention deficit hyperactivity disorder,palliates
+DB00334,Olanzapine,DOID:11119,Gilles de la Tourette syndrome,palliates
+DB00443,Betamethasone,DOID:1319,brain cancer,palliates
+DB00482,Celecoxib,DOID:8398,osteoarthritis,palliates
+DB00537,Ciprofloxacin,DOID:3083,chronic obstructive pulmonary disease,palliates
+DB00742,Mannitol,DOID:1686,glaucoma,palliates
+DB01166,Cilostazol,DOID:418,systemic scleroderma,palliates
+DB00813,Fentanyl,DOID:10283,prostate cancer,palliates
+DB00477,Chlorpromazine,DOID:12995,conduct disorder,palliates
+DB00715,Paroxetine,DOID:594,panic disorder,palliates
+DB00214,Torasemide,DOID:784,chronic kidney failure,palliates
+DB00458,Imipramine,DOID:1094,attention deficit hyperactivity disorder,palliates
+DB00924,Cyclobenzaprine,DOID:8398,osteoarthritis,palliates
+DB00915,Amantadine,DOID:14330,Parkinson's disease,palliates
+DB01356,Lithium,DOID:5419,schizophrenia,palliates
+DB00246,Ziprasidone,DOID:3312,bipolar disorder,palliates
+DB01115,Nifedipine,DOID:418,systemic scleroderma,palliates
+DB01009,Ketoprofen,DOID:8398,osteoarthritis,palliates
+DB00554,Piroxicam,DOID:7148,rheumatoid arthritis,palliates
+DB00673,Aprepitant,DOID:219,colon cancer,palliates
+DB00245,Benzatropine,DOID:10652,Alzheimer's disease,palliates
+DB00572,Atropine,DOID:8778,Crohn's disease,palliates
+DB00443,Betamethasone,DOID:1612,breast cancer,palliates
+DB00977,Ethinyl Estradiol,DOID:1612,breast cancer,palliates
+DB00514,Dextromethorphan,DOID:2377,multiple sclerosis,palliates
+DB00736,Esomeprazole,DOID:5041,esophageal cancer,palliates
+DB00289,Atomoxetine,DOID:12849,autistic disorder,palliates
+DB00273,Topiramate,DOID:3312,bipolar disorder,palliates
+DB00727,Nitroglycerin,DOID:3393,coronary artery disease,palliates
+DB00776,Oxcarbazepine,DOID:3312,bipolar disorder,palliates
+DB00945,Acetylsalicylic acid,DOID:7148,rheumatoid arthritis,palliates
+DB01156,Bupropion,DOID:594,panic disorder,palliates
+DB00472,Fluoxetine,DOID:594,panic disorder,palliates
+DB00334,Olanzapine,DOID:594,panic disorder,palliates
+DB00788,Naproxen,DOID:6364,migraine,palliates
+DB00482,Celecoxib,DOID:9074,systemic lupus erythematosus,palliates
+DB00241,Butalbital,DOID:6364,migraine,palliates
+DB00903,Ethacrynic acid,DOID:784,chronic kidney failure,palliates
+DB01165,Ofloxacin,DOID:3083,chronic obstructive pulmonary disease,palliates
+DB00736,Esomeprazole,DOID:10283,prostate cancer,palliates
+DB00315,Zolmitriptan,DOID:6364,migraine,palliates
+DB00281,Lidocaine,DOID:8398,osteoarthritis,palliates
+DB00316,Acetaminophen,DOID:6364,migraine,palliates
+DB00734,Risperidone,DOID:12995,conduct disorder,palliates
+DB00555,Lamotrigine,DOID:3312,bipolar disorder,palliates
+DB00363,Clozapine,DOID:5419,schizophrenia,palliates
+DB00977,Ethinyl Estradiol,DOID:11612,polycystic ovary syndrome,palliates
+DB00433,Prochlorperazine,DOID:1612,breast cancer,palliates
+DB01043,Memantine,DOID:14330,Parkinson's disease,palliates
+DB00477,Chlorpromazine,DOID:3312,bipolar disorder,palliates
+DB00635,Prednisone,DOID:8398,osteoarthritis,palliates
+DB01219,Dantrolene,DOID:2377,multiple sclerosis,palliates
+DB00461,Nabumetone,DOID:7148,rheumatoid arthritis,palliates
+DB01397,Magnesium salicylate,DOID:8893,psoriasis,palliates
+DB00353,Methylergometrine,DOID:6364,migraine,palliates
+DB00443,Betamethasone,DOID:219,colon cancer,palliates
+DB00736,Esomeprazole,DOID:263,kidney cancer,palliates
+DB00289,Atomoxetine,DOID:1094,attention deficit hyperactivity disorder,palliates
+DB00656,Trazodone,DOID:5419,schizophrenia,palliates
+DB00313,Valproic Acid,DOID:1595,endogenous depression,palliates
+DB01012,Cinacalcet,DOID:784,chronic kidney failure,palliates
+DB00673,Aprepitant,DOID:1612,breast cancer,palliates
+DB01137,Levofloxacin,DOID:3083,chronic obstructive pulmonary disease,palliates
+DB00712,Flurbiprofen,DOID:8398,osteoarthritis,palliates
+DB00814,Meloxicam,DOID:418,systemic scleroderma,palliates
+DB00476,Duloxetine,DOID:3312,bipolar disorder,palliates
+DB00367,Levonorgestrel,DOID:11612,polycystic ovary syndrome,palliates
+DB00586,Diclofenac,DOID:7148,rheumatoid arthritis,palliates
+DB00422,Methylphenidate,DOID:1094,attention deficit hyperactivity disorder,palliates
+DB00245,Benzatropine,DOID:14330,Parkinson's disease,palliates
+DB01085,Pilocarpine,DOID:11934,head and neck cancer,palliates
+DB00776,Oxcarbazepine,DOID:2377,multiple sclerosis,palliates
+DB00193,Tramadol,DOID:0050425,restless legs syndrome,palliates
+DB00351,Megestrol acetate,DOID:1612,breast cancer,palliates
+DB00482,Celecoxib,DOID:219,colon cancer,palliates
+DB01018,Guanfacine,DOID:1094,attention deficit hyperactivity disorder,palliates
+DB06684,Vilazodone,DOID:1595,endogenous depression,palliates
+DB00715,Paroxetine,DOID:3312,bipolar disorder,palliates
+DB00707,Porfimer,DOID:5041,esophageal cancer,palliates
+DB00408,Loxapine,DOID:5419,schizophrenia,palliates
+DB00268,Ropinirole,DOID:0050425,restless legs syndrome,palliates
+DB00190,Carbidopa,DOID:0050425,restless legs syndrome,palliates
+DB01020,Isosorbide Mononitrate,DOID:3393,coronary artery disease,palliates
+DB00829,Diazepam,DOID:2377,multiple sclerosis,palliates
+DB01186,Pergolide,DOID:14330,Parkinson's disease,palliates
+DB00813,Fentanyl,DOID:1324,lung cancer,palliates
+DB00575,Clonidine,DOID:1094,attention deficit hyperactivity disorder,palliates
+DB00268,Ropinirole,DOID:10652,Alzheimer's disease,palliates
+DB00952,Naratriptan,DOID:6364,migraine,palliates
+DB00313,Valproic Acid,DOID:5419,schizophrenia,palliates
+DB01198,Zopiclone,DOID:5419,schizophrenia,palliates
+DB00254,Doxycycline,DOID:3083,chronic obstructive pulmonary disease,palliates
+DB00635,Prednisone,DOID:6364,migraine,palliates
+DB01401,Trisalicylate-choline,DOID:8893,psoriasis,palliates
+DB01233,Metoclopramide,DOID:10283,prostate cancer,palliates
+DB00458,Imipramine,DOID:594,panic disorder,palliates
+DB00540,Nortriptyline,DOID:1595,endogenous depression,palliates
+DB00286,Conjugated Estrogens,DOID:1612,breast cancer,palliates
+DB00734,Risperidone,DOID:5419,schizophrenia,palliates
+DB00475,Chlordiazepoxide,DOID:0050741,alcohol dependence,palliates
+DB00996,Gabapentin,DOID:3312,bipolar disorder,palliates
+DB01399,Salsalate,DOID:7148,rheumatoid arthritis,palliates
+DB00904,Ondansetron,DOID:0050741,alcohol dependence,palliates
+DB00797,Tolazoline,DOID:418,systemic scleroderma,palliates
+DB00363,Clozapine,DOID:3312,bipolar disorder,palliates
+DB00316,Acetaminophen,DOID:8398,osteoarthritis,palliates
+DB00321,Amitriptyline,DOID:1595,endogenous depression,palliates
+DB00458,Imipramine,DOID:1595,endogenous depression,palliates
+DB00295,Morphine,DOID:3393,coronary artery disease,palliates
+DB00586,Diclofenac,DOID:418,systemic scleroderma,palliates
+DB01142,Doxepin,DOID:3310,atopic dermatitis,palliates
+DB01296,Glucosamine,DOID:8398,osteoarthritis,palliates
+DB00575,Clonidine,DOID:11119,Gilles de la Tourette syndrome,palliates
+DB00461,Nabumetone,DOID:8398,osteoarthritis,palliates
+DB00472,Fluoxetine,DOID:5419,schizophrenia,palliates
+DB00281,Lidocaine,DOID:7148,rheumatoid arthritis,palliates
+DB00338,Omeprazole,DOID:5041,esophageal cancer,palliates
+DB01398,Salicylate-sodium,DOID:8893,psoriasis,palliates
+DB01576,Dextroamphetamine,DOID:8986,narcolepsy,palliates
+DB00814,Meloxicam,DOID:9074,systemic lupus erythematosus,palliates
+DB00991,Oxaprozin,DOID:7148,rheumatoid arthritis,palliates
+DB00201,Caffeine,DOID:6364,migraine,palliates
+DB00190,Carbidopa,DOID:14330,Parkinson's disease,palliates
+DB01075,Diphenhydramine,DOID:14330,Parkinson's disease,palliates
+DB00910,Paricalcitol,DOID:784,chronic kidney failure,palliates
+DB00321,Amitriptyline,DOID:9074,systemic lupus erythematosus,palliates
+DB01364,Ephedrine,DOID:4481,allergic rhinitis,palliates
+DB00679,Thioridazine,DOID:5419,schizophrenia,palliates
+DB01068,Clonazepam,DOID:5419,schizophrenia,palliates
+DB00624,Testosterone,DOID:1612,breast cancer,palliates
+DB00182,Amphetamine,DOID:8986,narcolepsy,palliates
+DB01427,Amrinone,DOID:12930,dilated cardiomyopathy,palliates
+DB00281,Lidocaine,DOID:418,systemic scleroderma,palliates
+DB00575,Clonidine,DOID:0050425,restless legs syndrome,palliates
+DB00427,Triprolidine,DOID:3310,atopic dermatitis,palliates
+DB01240,Epoprostenol,DOID:418,systemic scleroderma,palliates
+DB00734,Risperidone,DOID:3312,bipolar disorder,palliates
+DB00656,Trazodone,DOID:1595,endogenous depression,palliates
+DB00945,Acetylsalicylic acid,DOID:13189,gout,palliates
+DB01367,Rasagiline,DOID:14330,Parkinson's disease,palliates
+DB00861,Diflunisal,DOID:8398,osteoarthritis,palliates
+DB01440,Gamma Hydroxybutyric Acid,DOID:8986,narcolepsy,palliates
+DB00540,Nortriptyline,DOID:594,panic disorder,palliates
+DB00320,Dihydroergotamine,DOID:6364,migraine,palliates
+DB00936,Salicylic acid,DOID:8893,psoriasis,palliates
+DB00404,Alprazolam,DOID:418,systemic scleroderma,palliates
+DB00934,Maprotiline,DOID:594,panic disorder,palliates
+DB00184,Nicotine,DOID:0050742,nicotine dependence,palliates
+DB00104,Octreotide,DOID:9744,type 1 diabetes mellitus,palliates
+DB06710,Methyltestosterone,DOID:1612,breast cancer,palliates
+DB01238,Aripiprazole,DOID:3312,bipolar disorder,palliates
+DB00996,Gabapentin,DOID:2377,multiple sclerosis,palliates
+DB00514,Dextromethorphan,DOID:332,amyotrophic lateral sclerosis,palliates
+DB00741,Hydrocortisone,DOID:10283,prostate cancer,palliates
+DB00788,Naproxen,DOID:8398,osteoarthritis,palliates
+DB01395,Drospirenone,DOID:11612,polycystic ovary syndrome,palliates
+DB00248,Cabergoline,DOID:14330,Parkinson's disease,palliates
+DB00387,Procyclidine,DOID:14330,Parkinson's disease,palliates
+DB00924,Cyclobenzaprine,DOID:6364,migraine,palliates
+DB00482,Celecoxib,DOID:2531,hematologic cancer,palliates
+DB00959,Methylprednisolone,DOID:1319,brain cancer,palliates
+DB01037,Selegiline,DOID:14330,Parkinson's disease,palliates
+DB00814,Meloxicam,DOID:7147,ankylosing spondylitis,palliates
+DB00745,Modafinil,DOID:8986,narcolepsy,palliates
+DB00861,Diflunisal,DOID:7148,rheumatoid arthritis,palliates
+DB01435,Antipyrine,DOID:6364,migraine,palliates
+DB00338,Omeprazole,DOID:418,systemic scleroderma,palliates
+DB00334,Olanzapine,DOID:3312,bipolar disorder,palliates
+DB01173,Orphenadrine,DOID:6364,migraine,palliates
+DB01242,Clomipramine,DOID:594,panic disorder,palliates
+DB00668,Epinephrine,DOID:2841,asthma,palliates
+DB00600,Monobenzone,DOID:12306,vitiligo,palliates
+DB00697,Tizanidine,DOID:2377,multiple sclerosis,palliates
+DB00215,Citalopram,DOID:3312,bipolar disorder,palliates
+DB00717,Norethindrone,DOID:11612,polycystic ovary syndrome,palliates
+DB01119,Diazoxide,DOID:10763,hypertension,palliates
+DB00657,Mecamylamine,DOID:11119,Gilles de la Tourette syndrome,palliates
+DB01224,Quetiapine,DOID:10652,Alzheimer's disease,palliates
+DB00482,Celecoxib,DOID:7148,rheumatoid arthritis,palliates
+DB00564,Carbamazepine,DOID:2377,multiple sclerosis,palliates
+DB00500,Tolmetin,DOID:7147,ankylosing spondylitis,palliates
+DB00623,Fluphenazine,DOID:5419,schizophrenia,palliates
+DB00820,Tadalafil,DOID:418,systemic scleroderma,palliates
+DB00668,Epinephrine,DOID:4481,allergic rhinitis,palliates
+DB00258,Calcium Acetate,DOID:784,chronic kidney failure,palliates
+DB00413,Pramipexole,DOID:0050425,restless legs syndrome,palliates
+DB00424,Hyoscyamine,DOID:14330,Parkinson's disease,palliates
+DB00424,Hyoscyamine,DOID:8778,Crohn's disease,palliates
+DB00203,Sildenafil,DOID:9744,type 1 diabetes mellitus,palliates
+DB00343,Diltiazem,DOID:3393,coronary artery disease,palliates
+DB00186,Lorazepam,DOID:594,panic disorder,palliates
+DB00285,Venlafaxine,DOID:1094,attention deficit hyperactivity disorder,palliates
+DB00540,Nortriptyline,DOID:2377,multiple sclerosis,palliates
+DB01233,Metoclopramide,DOID:6364,migraine,palliates
+DB00706,Tamsulosin,DOID:10283,prostate cancer,palliates
+DB00304,Desogestrel,DOID:11612,polycystic ovary syndrome,palliates
+DB00230,Pregabalin,DOID:2377,multiple sclerosis,palliates
+DB01068,Clonazepam,DOID:12849,autistic disorder,palliates
+DB00814,Meloxicam,DOID:8398,osteoarthritis,palliates
+DB00502,Haloperidol,DOID:10652,Alzheimer's disease,palliates
+DB00321,Amitriptyline,DOID:2377,multiple sclerosis,palliates
+DB00668,Epinephrine,DOID:1686,glaucoma,palliates
+DB00502,Haloperidol,DOID:11119,Gilles de la Tourette syndrome,palliates
+DB08866,Estradiol valerate/Dienogest,DOID:1612,breast cancer,palliates
+DB01104,Sertraline,DOID:12849,autistic disorder,palliates
+DB00245,Benzatropine,DOID:12849,autistic disorder,palliates
+DB00490,Buspirone,DOID:594,panic disorder,palliates
+DB00176,Fluvoxamine,DOID:1595,endogenous depression,palliates
+DB01075,Diphenhydramine,DOID:5419,schizophrenia,palliates
+DB00975,Dipyridamole,DOID:3393,coronary artery disease,palliates
+DB00443,Betamethasone,DOID:10283,prostate cancer,palliates
+DB00852,Pseudoephedrine,DOID:4481,allergic rhinitis,palliates
+DB01234,Dexamethasone,DOID:1612,breast cancer,palliates
+DB00413,Pramipexole,DOID:14330,Parkinson's disease,palliates
+DB00245,Benzatropine,DOID:5419,schizophrenia,palliates
+DB00620,Triamcinolone,DOID:1319,brain cancer,palliates
+DB00749,Etodolac,DOID:8398,osteoarthritis,palliates
+DB00230,Pregabalin,DOID:0050425,restless legs syndrome,palliates
+DB01233,Metoclopramide,DOID:418,systemic scleroderma,palliates
+DB01234,Dexamethasone,DOID:219,colon cancer,palliates
+DB00906,Tiagabine,DOID:3312,bipolar disorder,palliates
+DB00945,Acetylsalicylic acid,DOID:6364,migraine,palliates
+DB00746,Deferoxamine,DOID:784,chronic kidney failure,palliates
+DB00745,Modafinil,DOID:1094,attention deficit hyperactivity disorder,palliates
+DB00476,Duloxetine,DOID:1595,endogenous depression,palliates
+DB00788,Naproxen,DOID:9074,systemic lupus erythematosus,palliates
+DB01420,Testosterone Propionate,DOID:1612,breast cancer,palliates
+DB00883,Isosorbide Dinitrate,DOID:3393,coronary artery disease,palliates
+DB01401,Trisalicylate-choline,DOID:7148,rheumatoid arthritis,palliates
+DB00915,Amantadine,DOID:2377,multiple sclerosis,palliates
+DB00945,Acetylsalicylic acid,DOID:8398,osteoarthritis,palliates
+DB00621,Oxandrolone,DOID:11476,osteoporosis,palliates
+DB00696,Ergotamine,DOID:6364,migraine,palliates
+DB00136,Calcitriol,DOID:784,chronic kidney failure,palliates
+DB00714,Apomorphine,DOID:14330,Parkinson's disease,palliates
+DB05271,Rotigotine,DOID:14330,Parkinson's disease,palliates
+DB00338,Omeprazole,DOID:263,kidney cancer,palliates
+DB00482,Celecoxib,DOID:263,kidney cancer,palliates
+DB01068,Clonazepam,DOID:2377,multiple sclerosis,palliates
+DB00935,Oxymetazoline,DOID:4481,allergic rhinitis,palliates
+DB00376,Trihexyphenidyl,DOID:14330,Parkinson's disease,palliates
+DB00734,Risperidone,DOID:11119,Gilles de la Tourette syndrome,palliates
+DB00334,Olanzapine,DOID:5419,schizophrenia,palliates
+DB00918,Almotriptan,DOID:6364,migraine,palliates
+DB01235,L-DOPA,DOID:14330,Parkinson's disease,palliates
+DB00695,Furosemide,DOID:784,chronic kidney failure,palliates
+DB00734,Risperidone,DOID:12849,autistic disorder,palliates
+DB00564,Carbamazepine,DOID:0050425,restless legs syndrome,palliates
+DB01394,Colchicine,DOID:418,systemic scleroderma,palliates
+DB00850,Perphenazine,DOID:11119,Gilles de la Tourette syndrome,palliates
+DB01235,L-DOPA,DOID:0050425,restless legs syndrome,palliates
+DB00603,Medroxyprogesterone Acetate,DOID:1612,breast cancer,palliates
+DB00814,Meloxicam,DOID:7148,rheumatoid arthritis,palliates
+DB01151,Desipramine,DOID:1094,attention deficit hyperactivity disorder,palliates
+DB01068,Clonazepam,DOID:0050425,restless legs syndrome,palliates
+DB00586,Diclofenac,DOID:7147,ankylosing spondylitis,palliates
+DB01577,Methamphetamine,DOID:8986,narcolepsy,palliates
+DB00788,Naproxen,DOID:7148,rheumatoid arthritis,palliates
+DB00425,Zolpidem,DOID:2377,multiple sclerosis,palliates
+DB00390,Digoxin,DOID:3393,coronary artery disease,palliates
+DB06637,Dalfampridine,DOID:2377,multiple sclerosis,palliates
+DB00494,Entacapone,DOID:14330,Parkinson's disease,palliates
+DB01234,Dexamethasone,DOID:1319,brain cancer,palliates
+DB00182,Amphetamine,DOID:1094,attention deficit hyperactivity disorder,palliates
+DB01577,Methamphetamine,DOID:1094,attention deficit hyperactivity disorder,palliates
+DB00502,Haloperidol,DOID:12995,conduct disorder,palliates
+DB01364,Ephedrine,DOID:2841,asthma,palliates
+DB00381,Amlodipine,DOID:3393,coronary artery disease,palliates
+DB00996,Gabapentin,DOID:7148,rheumatoid arthritis,palliates
+DB01589,Quazepam,DOID:2377,multiple sclerosis,palliates
+DB00573,Fenoprofen,DOID:8398,osteoarthritis,palliates
+DB01238,Aripiprazole,DOID:12849,autistic disorder,palliates
+DB00477,Chlorpromazine,DOID:5419,schizophrenia,palliates
+DB00328,Indomethacin,DOID:8398,osteoarthritis,palliates
+DB01247,Isocarboxazid,DOID:594,panic disorder,palliates
+DB00697,Tizanidine,DOID:6364,migraine,palliates
+DB00181,Baclofen,DOID:2377,multiple sclerosis,palliates
+DB00852,Pseudoephedrine,DOID:2841,asthma,palliates
+DB00605,Sulindac,DOID:8398,osteoarthritis,palliates
+DB01186,Pergolide,DOID:11119,Gilles de la Tourette syndrome,palliates
+DB01068,Clonazepam,DOID:594,panic disorder,palliates
+DB00318,Codeine,DOID:8398,osteoarthritis,palliates
+DB01234,Dexamethasone,DOID:263,kidney cancer,palliates
+DB00555,Lamotrigine,DOID:5419,schizophrenia,palliates
+DB00831,Trifluoperazine,DOID:5419,schizophrenia,palliates
+DB00959,Methylprednisolone,DOID:2531,hematologic cancer,palliates
+DB00564,Carbamazepine,DOID:3312,bipolar disorder,palliates
+DB00215,Citalopram,DOID:594,panic disorder,palliates
+DB00338,Omeprazole,DOID:10283,prostate cancer,palliates
+DB00715,Paroxetine,DOID:1595,endogenous depression,palliates
+DB00996,Gabapentin,DOID:14330,Parkinson's disease,palliates
+DB00246,Ziprasidone,DOID:5419,schizophrenia,palliates
+DB00788,Naproxen,DOID:7147,ankylosing spondylitis,palliates
+DB01036,Tolterodine,DOID:2377,multiple sclerosis,palliates
+DB00216,Eletriptan,DOID:6364,migraine,palliates
+DB00953,Rizatriptan,DOID:6364,migraine,palliates
+DB00328,Indomethacin,DOID:6364,migraine,palliates
+DB01234,Dexamethasone,DOID:10283,prostate cancer,palliates
+DB00655,Estrone,DOID:1612,breast cancer,palliates
+DB01104,Sertraline,DOID:594,panic disorder,palliates
+DB01623,Thiothixene,DOID:5419,schizophrenia,palliates
+DB00285,Venlafaxine,DOID:594,panic disorder,palliates
+DB00736,Esomeprazole,DOID:418,systemic scleroderma,palliates
+DB00482,Celecoxib,DOID:10283,prostate cancer,palliates
+DB00323,Tolcapone,DOID:14330,Parkinson's disease,palliates
+DB00443,Betamethasone,DOID:263,kidney cancer,palliates
+DB00268,Ropinirole,DOID:14330,Parkinson's disease,palliates
+DB01198,Zopiclone,DOID:2377,multiple sclerosis,palliates
+DB01238,Aripiprazole,DOID:1595,endogenous depression,palliates
+DB00586,Diclofenac,DOID:6364,migraine,palliates
+DB00434,Cyproheptadine,DOID:5419,schizophrenia,palliates
+DB00687,Fludrocortisone,DOID:14330,Parkinson's disease,palliates
+DB01115,Nifedipine,DOID:3393,coronary artery disease,palliates
+DB06151,Acetylcysteine,DOID:3083,chronic obstructive pulmonary disease,palliates
+DB00390,Digoxin,DOID:12930,dilated cardiomyopathy,palliates
+DB00959,Methylprednisolone,DOID:8398,osteoarthritis,palliates
+DB00434,Cyproheptadine,DOID:6364,migraine,palliates
+DB00575,Clonidine,DOID:12849,autistic disorder,palliates
+DB00656,Trazodone,DOID:3312,bipolar disorder,palliates
+DB01050,Ibuprofen,DOID:8398,osteoarthritis,palliates
+DB00328,Indomethacin,DOID:7148,rheumatoid arthritis,palliates
+DB00482,Celecoxib,DOID:418,systemic scleroderma,palliates
+DB00996,Gabapentin,DOID:0050425,restless legs syndrome,palliates
+DB00203,Sildenafil,DOID:2377,multiple sclerosis,palliates
+DB00669,Sumatriptan,DOID:6364,migraine,palliates
+DB01104,Sertraline,DOID:1595,endogenous depression,palliates
+DB00745,Modafinil,DOID:14330,Parkinson's disease,palliates
+DB00991,Oxaprozin,DOID:8398,osteoarthritis,palliates
+DB01238,Aripiprazole,DOID:5419,schizophrenia,palliates
+DB00572,Atropine,DOID:14330,Parkinson's disease,palliates
+DB00482,Celecoxib,DOID:7147,ankylosing spondylitis,palliates
+DB00104,Octreotide,DOID:1793,pancreatic cancer,palliates
+DB00502,Haloperidol,DOID:5419,schizophrenia,palliates
+DB00745,Modafinil,DOID:2377,multiple sclerosis,palliates
+DB00933,Mesoridazine,DOID:5419,schizophrenia,palliates
+DB00122,Choline,DOID:8398,osteoarthritis,palliates
+DB00246,Ziprasidone,DOID:11119,Gilles de la Tourette syndrome,palliates
+DB01591,Solifenacin,DOID:2377,multiple sclerosis,palliates
+DB00998,Frovatriptan,DOID:6364,migraine,palliates
+DB00554,Piroxicam,DOID:7147,ankylosing spondylitis,palliates
+DB01224,Quetiapine,DOID:5419,schizophrenia,palliates
+DB00586,Diclofenac,DOID:8398,osteoarthritis,palliates
+DB00783,Estradiol,DOID:1612,breast cancer,palliates
+DB00313,Valproic Acid,DOID:3312,bipolar disorder,palliates
+DB00564,Carbamazepine,DOID:5419,schizophrenia,palliates
+DB00887,Bumetanide,DOID:784,chronic kidney failure,palliates
+DB01576,Dextroamphetamine,DOID:1094,attention deficit hyperactivity disorder,palliates
+DB01068,Clonazepam,DOID:3312,bipolar disorder,palliates

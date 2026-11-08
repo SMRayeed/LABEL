@@ -1,0 +1,41 @@
+reading <repo>/data/mondo.obo ...
+  32,134 terms, 32,130 with a parent
+  0 of 46,732 is_a pairs appear reversed (directed, good)
+reading names from <repo>/work/pkg_pc.csv ...
+  17,008 MONDO ids carry a name in that file
+  14,591 of them exist in this MONDO release (85.8%)
+
+wrote <repo>/work/mondo_child_parent.csv: 17,801 pairs, 11,788 children, 9 parents at most
+  dropped 5,857 pairs whose parent has more than 400 descendants
+  dropped 0 pairs whose parent has no name
+
+broadest terms, excluded by the cut:
+   31,582 descendants  disease or disorder
+   23,262 descendants  human disease
+   18,875 descendants  disease by body system or component
+   17,810 descendants  disease by etiologic mechanism
+   12,256 descendants  disease of genetic or genomic mechanism
+   11,784 descendants  Mendelian disease
+    8,318 descendants  non-human animal disease
+    7,322 descendants  disease by developmental or physiological process
+
+sample pairs:
+  10q22.3q23.3 microduplication syndrome  ->  partial duplication of the long arm of chromosome 10
+  11p15.4 microduplication syndrome  ->  overgrowth syndrome
+  11p15.4 microduplication syndrome  ->  partial duplication of the short arm of chromosome 11
+  11q22.2q22.3 microdeletion syndrome  ->  partial deletion of the long arm of chromosome 11
+  12p12.1 microdeletion syndrome  ->  chromosome 12p deletion
+  12q14 microdeletion syndrome  ->  partial deletion of the long arm of chromosome 12
+  12q15q21.1 microdeletion syndrome  ->  partial deletion of the long arm of chromosome 12
+  13q12.3 microdeletion syndrome  ->  epidermal disease
+
+Next, measure the granularity tier against it. Start at depth 1, which asks
+only whether the article named the disease's immediate parent:
+
+  python3 name_tiers.py --edges pkg_ind_d2d.csv pkg_con_d2dis.csv \
+      pkg_off_d2dis.csv --names redirects --any-names --n 600 \
+      --ancestors <repo>/work/mondo_child_parent.csv --ancestor-depth 1 --rps 3 --csv primekg_tiers.csv
+
+Watch the T3 floor. Under about 15% the column is real. If it climbs, the
+parents still in the table are too broad: lower --max-descendants here and
+rebuild.

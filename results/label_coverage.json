@@ -1,0 +1,76 @@
+{
+  "drugs_with_label": 472,
+  "drugs_total": 574,
+  "relations": {
+    "contraindication": {
+      "n": 1416,
+      "wiki": [
+        10.95,
+        9.42,
+        12.68
+      ],
+      "union": [
+        17.23,
+        15.35,
+        19.29
+      ],
+      "own": [
+        2.61,
+        1.9,
+        3.58
+      ],
+      "any": [
+        22.88,
+        20.77,
+        25.14
+      ],
+      "all3": [
+        26.69,
+        24.46,
+        29.06
+      ],
+      "own_family_only": 0.99,
+      "any_family_only": 8.4,
+      "own_section_empty": 9.53,
+      "prose_miss": 1172,
+      "rescued_by_own_section": 1.37,
+      "rescued_by_whole_label": 11.43,
+      "floor_exact_whole_label": 2.82
+    },
+    "indication": {
+      "n": 1416,
+      "wiki": [
+        22.25,
+        20.16,
+        24.49
+      ],
+      "union": [
+        30.51,
+        28.17,
+        32.96
+      ],
+      "own": [
+        19.07,
+        17.11,
+        21.2
+      ],
+      "any": [
+        23.73,
+        21.59,
+        26.01
+      ],
+      "all3": [
+        34.04,
+        31.62,
+        36.55
+      ],
+      "own_family_only": 11.23,
+      "any_family_only": 16.1,
+      "own_section_empty": 0.21,
+      "prose_miss": 984,
+      "rescued_by_own_section": 3.35,
+      "rescued_by_whole_label": 5.08,
+      "floor_exact_whole_label": 2.1
+    }
+  }
+}

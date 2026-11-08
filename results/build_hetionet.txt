@@ -1,0 +1,23 @@
+  ancestors from doid_child_parent.csv: child=child parent=parent -> 103 rows, 74 children
+  treats: fetching up to 755 source articles
+
+  treats: 600 measurable edges
+  palliates: fetching up to 390 source articles
+
+  palliates: 385 measurable edges
+
+building the co-occurrence index: 586 entities over 497 articles
+
+  index built in 2s
+
+wrote het_edges.csv: 985 edges
+wrote het_prompts.jsonl: 2,955 prompts
+
+tier distribution (0 exact, 1 synonym, 2 common name, 3 ancestor, 4 none):
+  tier 0:    537   54.5%
+  tier 1:      0    0.0%
+  tier 2:     23    2.3%
+  tier 3:     52    5.3%
+  tier 4:    373   37.9%
+
+network: 7 requests, 0 throttle events, 0 unrecoverable

@@ -1,0 +1,25 @@
+  ancestors from mondo_child_parent.csv: child=child parent=parent -> 17,801 rows, 11,788 children
+  matched_indication.csv           1,785 edges kept
+  matched_contraindication.csv     1,785 edges kept
+  indication: fetching up to 1,785 source articles
+
+  indication: 1,722 measurable edges
+  contraindication: fetching up to 1,785 source articles
+
+  contraindication: 1,722 measurable edges
+
+building the co-occurrence index: 1,518 entities over 574 articles
+
+  index built in 3s
+
+wrote matched_edges.csv: 3,444 edges
+wrote matched_prompts.jsonl: 10,332 prompts
+
+tier distribution (0 exact, 1 synonym, 2 common name, 3 ancestor, 4 none):
+  tier 0:    456   13.2%
+  tier 1:      0    0.0%
+  tier 2:     63    1.8%
+  tier 3:    337    9.8%
+  tier 4:  2,588   75.1%
+
+network: 16 requests, 0 throttle events, 0 unrecoverable

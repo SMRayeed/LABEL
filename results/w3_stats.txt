@@ -1,0 +1,31 @@
+==============================================================================
+1. ACCURACY PER RELATION, five options, no page, chance 20%
+    relation           model       n   accuracy [95% CI]
+    contraindication   small     600   22.17% [19.03, 25.66]
+    contraindication   large     600   23.83% [20.60, 27.40]
+    indication         small     600   31.50% [27.91, 35.32]
+    indication         large     600   50.83% [46.84, 54.82]
+    off-label use      small     600   28.50% [25.03, 32.24]
+    off-label use      large     600   35.00% [31.29, 38.90]
+
+==============================================================================
+2. GAIN FROM SCALE, paired per edge, bootstrap over drugs
+    contraindication   n=  600   gain  +1.67 points
+    indication         n=  600   gain +19.33 points
+    off-label use      n=  600   gain  +6.50 points
+
+    indication gain minus contraindication gain: +17.67 points  [+12.68, +22.70]
+    z=+6.91  p=4.8e-12  (bootstrap share at or below zero 0.0000; 709 drugs resampled)
+
+==============================================================================
+3. THE GAP UNDER DIFFERENT DISTRACTORS
+   closed book, options from the answer's own disease family plus 'Not enough information'
+    model                                    indication       contraind.     gap      p
+    Qwen2.5-0.5B-Instruct                36.0% (n=450)   28.1% (n=406)   +7.9   0.013
+                                       within naming group:   +8.2 points   p=0.0089
+    Qwen2.5-7B-Instruct                  56.0% (n=450)   25.1% (n=406)  +30.9   0
+                                       within naming group:  +31.3 points   p=0
+    OLMo-2-1124-7B-Instruct              56.0% (n=450)   33.0% (n=406)  +23.0   1.5e-11
+                                       within naming group:  +23.6 points   p=2.3e-13
+    granite-3.1-8b-instruct              58.7% (n=450)   12.8% (n=406)  +45.9   0
+                                       within naming group:  +46.3 points   p=0

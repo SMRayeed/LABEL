@@ -1,0 +1,85 @@
+  ancestors from mondo_child_parent.csv: child=child parent=parent -> 17,801 rows, 11,788 children
+574 distinct sources, 574 to fetch from pubmed at 8.0 req/s
+  roughly 1 minutes; the cache makes a rerun free
+    10/574  ~6 min left
+    20/574  ~7 min left
+    30/574  ~6 min left
+    40/574  ~7 min left
+    50/574  ~6 min left
+    60/574  ~6 min left
+    70/574  ~6 min left
+    80/574  ~6 min left
+    90/574  ~6 min left
+    100/574  ~6 min left
+    110/574  ~6 min left
+    120/574  ~6 min left
+    130/574  ~5 min left
+    140/574  ~5 min left
+    150/574  ~5 min left
+    160/574  ~5 min left
+    170/574  ~5 min left
+    180/574  ~5 min left
+    190/574  ~5 min left
+    200/574  ~5 min left
+    210/574  ~4 min left
+    220/574  ~4 min left
+    230/574  ~4 min left
+    240/574  ~4 min left
+    250/574  ~4 min left
+    260/574  ~4 min left
+    270/574  ~4 min left
+    280/574  ~4 min left
+    290/574  ~3 min left
+    300/574  ~3 min left
+    310/574  ~3 min left
+    320/574  ~3 min left
+    330/574  ~3 min left
+    340/574  ~3 min left
+    350/574  ~3 min left
+    360/574  ~3 min left
+    370/574  ~2 min left
+    380/574  ~2 min left
+    390/574  ~2 min left
+    400/574  ~2 min left
+    410/574  ~2 min left
+    420/574  ~2 min left
+    430/574  ~2 min left
+    440/574  ~2 min left
+    450/574  ~1 min left
+    460/574  ~1 min left
+    470/574  ~1 min left
+    480/574  ~1 min left
+    490/574  ~1 min left
+    500/574  ~1 min left
+    510/574  ~1 min left
+    520/574  ~1 min left
+    530/574  ~1 min left
+    540/574  ~0 min left
+    550/574  ~0 min left
+    560/574  ~0 min left
+    570/574  ~0 min left
+
+  1,147 requests, 0 unrecoverable
+
+pubmed documents shorter than 400 chars, counted absent: 6 of 3,444
+
+SILENT BOX, three ways
+  cut   encyclopedia   second corpus   union      union shrinks it by
+   <=2       84.93%         83.22%     79.12%        +5.81 points
+   <=3       75.15%         72.50%     66.72%        +8.42 points
+
+  The union is the number the paper has to report. A union close
+  to the encyclopedia column means the fact is absent from both
+  bodies of text and the silent box is a property of the graph.
+
+BY RELATION, at cut <= 2
+  relation                      n   encyc.   second    union
+  contraindication          1,722   90.19%   89.78%   84.90%
+  indication                1,722   79.67%   76.66%   73.34%
+
+  An asymmetry between relations that holds in the second
+  column as well is not an artifact of one corpus either.
+
+wrote matched_edges_pm.csv
+Re-run four_boxes.py on it with --scored matched_edges_pm.csv after renaming
+tier_union to tier, to get the four-box table against both corpora.
