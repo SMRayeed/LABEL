@@ -1,8 +1,6 @@
 <div align="center">
 
-# 💊 LABEL
-
-### Literature Asymmetry between Efficacy and Limits in drug knowledge and language models
+## 💊 LABEL: Literature Asymmetry between Efficacy and Limits in Drug Knowledge and Language Models
 
 [![Venue](https://img.shields.io/badge/W3PHIAI-AAAI%202027-7B5BD6)](paper/w3phiai.pdf)
 [![License: MIT](https://img.shields.io/badge/license-MIT-1AA874)](LICENSE)
@@ -292,7 +290,7 @@ All settings live in [`config.sh`](config.sh). Each step resumes if it stops.
 
 ```bibtex
 @inproceedings{rayeed2027label,
-  title     = {{LABEL}: Literature Asymmetry between Efficacy and Limits in Drug Knowledge and Language Models},
+  title     = {{LABEL}: {L}iterature {A}symmetry between {E}fficacy and {L}imits in {D}rug {K}nowledge and {L}anguage {M}odels},
   author    = {Rayeed, S M and Stewart, Charles and Ma, Yao},
   year      = {2027}
 }
