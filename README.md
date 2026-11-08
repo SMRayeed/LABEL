@@ -2,7 +2,7 @@
 
 # 💊 LABEL
 
-### Literature Asymmetry between Efficacy and Limits in Drug Knowledge and Language Models
+### Literature Asymmetry between Efficacy and Limits in drug knowledge and language models
 
 [![Venue](https://img.shields.io/badge/W3PHIAI-AAAI%202027-7B5BD6)](paper/w3phiai.pdf)
 [![License: MIT](https://img.shields.io/badge/license-MIT-1AA874)](LICENSE)
@@ -294,13 +294,6 @@ All settings live in [`config.sh`](config.sh). Each step resumes if it stops.
 @inproceedings{rayeed2027label,
   title     = {{LABEL}: Literature Asymmetry between Efficacy and Limits in Drug Knowledge and Language Models},
   author    = {Rayeed, S M and Stewart, Charles and Ma, Yao},
-  booktitle = {W3PHIAI-27: International Workshop on Health Intelligence at AAAI 2027},
   year      = {2027}
 }
 ```
-
-<div align="center">
-
-MIT License · Rensselaer Polytechnic Institute · Icons: [Fluent Emoji](https://github.com/microsoft/fluentui-emoji) (MIT)
-
-</div>
