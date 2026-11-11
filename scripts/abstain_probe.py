@@ -80,6 +80,12 @@ except ImportError as e:
 
 csv.field_size_limit(min(2**31 - 1, sys.maxsize))
 
+
+def nt_label_safe(name):
+    """File name used by fetch_labels.py for a drug's label."""
+    import re as _re
+    return _re.sub(r"[^A-Za-z0-9._-]+", "_", name)[:150]
+
 BANDS = [("named", 0, 2), ("category", 3, 3), ("silent", 4, 4)]
 NOTA = "Not enough information to tell"
 # prompting baseline (--instruct): one added sentence, passage prompts only
@@ -253,6 +259,12 @@ def main():
     ap.add_argument("--raw-passage", action="store_true",
                     help="give the model Wikipedia source markup instead of "
                          "cleaned prose (the earlier behaviour)")
+    ap.add_argument("--page-labels", default="",
+                    help="label_cache directory: build the same questions from the "
+                         "usual text, but cut the passage from the drug's whole FDA "
+                         "label instead (routing test). Drugs without a label are "
+                         "left out after selection, so the other questions stay "
+                         "identical to the usual run.")
     ap.add_argument("--seed", type=int, default=0)
     ap.add_argument("--out", default="")
     a = ap.parse_args()
@@ -343,7 +355,7 @@ def main():
                                     # dropped edge does not shrink its group
 
     # ------------------------------------------------------- build items
-    items, no_text, short_pool = [], 0, 0
+    items, no_text, short_pool, no_label = [], 0, 0, 0
     taken = defaultdict(int)
     hidden = defaultdict(int)
     sib_counts = defaultdict(list)
@@ -416,6 +428,13 @@ def main():
             hidden[band] += 1
             continue
         taken[(rel, band)] += 1
+        if a.page_labels:
+            lp = os.path.join(a.page_labels, nt_label_safe(src) + ".json")
+            lab = json.load(open(lp, encoding="utf-8")) if os.path.exists(lp) else {}
+            if not lab.get("found") or not (lab.get("full") or "").strip():
+                no_label += 1
+                continue
+            passage = snippet(lab["full"], sets[3], clean=False)
         items.append({
             "id": f"{rel}|{band}|{src}|{tgt}", "rel": rel, "band": band,
             "tier": int(r["tier"]), "src": src, "tgt": tgt,
@@ -432,6 +451,9 @@ def main():
         print(f"  {no_text:,} edges dropped: no cached text for the source")
     if short_pool:
         print(f"  {short_pool:,} edges dropped: too few distractors")
+    if no_label:
+        print(f"  {no_label:,} questions left out: the drug has no FDA label "
+              f"(--page-labels)")
     for b_, n_ in hidden.items():
         print(f"  {n_:,} {b_} edges skipped: the cleaned passage no longer "
               f"shows the {'target' if b_ == 'named' else 'family'} "

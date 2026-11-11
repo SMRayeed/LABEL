@@ -1,0 +1,98 @@
+  ancestors from mondo_child_parent.csv: child=child parent=parent -> 17,801 rows, 11,788 children
+
+0 answered, 726 to go
+loading allenai/OLMo-2-1124-7B-Instruct on cpu, 36 threads ...
+
+726 questions (5 options plus 'Not enough information to tell')
+  130 questions left out: the drug has no FDA label (--page-labels)
+  24 category edges skipped: the cleaned passage no longer shows the family (replaced by other edges where available)
+  30 named edges skipped: the cleaned passage no longer shows the target (replaced by other edges where available)
+
+  group      relation               questions   all-sibling options
+  named      contraindication             132     29.5%
+  named      indication                   136     39.7%
+  category   contraindication              89     84.3%
+  category   indication                   127     83.5%
+  silent     contraindication             125     44.8%
+  silent     indication                   117     60.7%
+
+  'all-sibling' is the share of questions whose distractors are all from the
+  target's own category. Where siblings run out, random targets fill in, which
+  makes those questions easier by elimination.
+Loading weights:   0%|          | 0/355 [00:00<?, ?it/s]Loading weights:   0%|          | 1/355 [00:33<3:20:34, 33.99s/it]Loading weights:  10%|▉         | 34/355 [00:35<03:57,  1.35it/s] Loading weights:  11%|█         | 38/355 [00:37<03:43,  1.42it/s]Loading weights:  12%|█▏        | 43/355 [00:38<03:14,  1.60it/s]Loading weights:  13%|█▎        | 45/355 [00:39<03:01,  1.71it/s]Loading weights:  13%|█▎        | 46/355 [00:39<02:50,  1.81it/s]Loading weights:  13%|█▎        | 47/355 [00:40<03:20,  1.53it/s]Loading weights:  14%|█▎        | 48/355 [00:42<03:51,  1.33it/s]Loading weights:  14%|█▍        | 49/355 [00:44<04:36,  1.11it/s]Loading weights:  16%|█▋        | 58/355 [00:45<01:52,  2.64it/s]Loading weights:  17%|█▋        | 59/355 [00:45<01:47,  2.75it/s]Loading weights:  17%|█▋        | 60/355 [00:46<01:58,  2.49it/s]Loading weights:  18%|█▊        | 65/355 [00:47<01:32,  3.14it/s]Loading weights:  19%|█▉        | 67/355 [00:48<01:42,  2.82it/s]Loading weights:  19%|█▉        | 69/355 [00:49<02:15,  2.10it/s]Loading weights:  20%|█▉        | 70/355 [00:49<02:01,  2.35it/s]Loading weights:  20%|██        | 71/355 [00:50<02:10,  2.17it/s]Loading weights:  22%|██▏       | 78/355 [00:50<00:54,  5.07it/s]Loading weights:  23%|██▎       | 80/355 [00:55<02:49,  1.62it/s]Loading weights:  23%|██▎       | 81/355 [00:55<02:36,  1.75it/s]Loading weights:  23%|██▎       | 82/355 [00:57<03:22,  1.35it/s]Loading weights:  25%|██▌       | 90/355 [00:58<01:44,  2.53it/s]Loading weights:  26%|██▌       | 91/355 [00:59<02:01,  2.17it/s]Loading weights:  26%|██▌       | 93/355 [01:02<02:43,  1.60it/s]Loading weights:  29%|██▊       | 102/355 [01:06<02:10,  1.94it/s]Loading weights:  31%|███       | 109/355 [01:07<01:38,  2.49it/s]Loading weights:  32%|███▏      | 113/355 [01:09<01:41,  2.37it/s]Loading weights:  32%|███▏      | 114/355 [01:10<01:45,  2.29it/s]Loading weights:  32%|███▏      | 115/355 [01:11<02:11,  1.83it/s]Loading weights:  35%|███▍      | 123/355 [01:12<01:02,  3.71it/s]Loading weights:  35%|███▌      | 125/355 [01:15<01:50,  2.09it/s]Loading weights:  38%|███▊      | 135/355 [01:19<01:41,  2.16it/s]Loading weights:  38%|███▊      | 136/355 [01:20<01:37,  2.24it/s]Loading weights:  41%|████      | 145/355 [01:21<00:59,  3.50it/s]Loading weights:  41%|████      | 146/355 [01:23<01:28,  2.37it/s]Loading weights:  41%|████▏     | 147/355 [01:23<01:26,  2.42it/s]Loading weights:  43%|████▎     | 152/355 [01:24<01:06,  3.05it/s]Loading weights:  43%|████▎     | 153/355 [01:25<01:09,  2.91it/s]Loading weights:  44%|████▍     | 156/355 [01:25<00:55,  3.57it/s]Loading weights:  44%|████▍     | 157/355 [01:29<02:38,  1.25it/s]Loading weights:  45%|████▍     | 158/355 [01:31<02:56,  1.12it/s]Loading weights:  47%|████▋     | 168/355 [01:34<01:35,  1.96it/s]Loading weights:  48%|████▊     | 170/355 [01:36<01:54,  1.61it/s]Loading weights:  50%|█████     | 179/355 [01:37<01:03,  2.79it/s]Loading weights:  51%|█████     | 181/355 [01:41<01:37,  1.79it/s]Loading weights:  53%|█████▎    | 188/355 [01:42<01:01,  2.72it/s]Loading weights:  54%|█████▎    | 190/355 [01:43<01:08,  2.41it/s]Loading weights:  54%|█████▍    | 191/355 [01:48<02:16,  1.20it/s]Loading weights:  57%|█████▋    | 201/355 [01:50<01:13,  2.10it/s]Loading weights:  59%|█████▉    | 211/355 [01:53<00:59,  2.42it/s]Loading weights:  60%|█████▉    | 212/355 [01:55<01:08,  2.07it/s]Loading weights:  60%|██████    | 213/355 [01:58<01:37,  1.46it/s]Loading weights:  63%|██████▎   | 223/355 [02:02<01:06,  1.98it/s]Loading weights:  63%|██████▎   | 225/355 [02:03<01:12,  1.80it/s]Loading weights:  65%|██████▌   | 232/355 [02:04<00:45,  2.72it/s]Loading weights:  66%|██████▌   | 234/355 [02:08<01:16,  1.58it/s]Loading weights:  69%|██████▉   | 245/355 [02:11<00:48,  2.26it/s]Loading weights:  69%|██████▉   | 246/355 [02:13<00:53,  2.03it/s]Loading weights:  70%|██████▉   | 247/355 [02:14<01:02,  1.72it/s]Loading weights:  72%|███████▏  | 255/355 [02:15<00:35,  2.79it/s]Loading weights:  72%|███████▏  | 256/355 [02:18<00:54,  1.81it/s]Loading weights:  72%|███████▏  | 257/355 [02:20<01:06,  1.47it/s]Loading weights:  75%|███████▌  | 267/355 [02:23<00:40,  2.15it/s]Loading weights:  76%|███████▌  | 269/355 [02:25<00:46,  1.86it/s]Loading weights:  78%|███████▊  | 278/355 [02:28<00:33,  2.27it/s]Loading weights:  79%|███████▉  | 280/355 [02:29<00:33,  2.22it/s]Loading weights:  80%|████████  | 285/355 [02:29<00:22,  3.12it/s]Loading weights:  81%|████████  | 288/355 [02:30<00:20,  3.32it/s]Loading weights:  81%|████████▏ | 289/355 [02:32<00:33,  1.98it/s]Loading weights:  82%|████████▏ | 290/355 [02:34<00:44,  1.46it/s]Loading weights:  84%|████████▍ | 298/355 [02:35<00:19,  2.97it/s]Loading weights:  85%|████████▍ | 300/355 [02:41<00:41,  1.31it/s]Loading weights:  85%|████████▌ | 302/355 [02:42<00:38,  1.37it/s]Loading weights:  88%|████████▊ | 311/355 [02:44<00:21,  2.08it/s]Loading weights:  88%|████████▊ | 312/355 [02:47<00:26,  1.63it/s]Loading weights:  88%|████████▊ | 313/355 [02:47<00:24,  1.73it/s]Loading weights:  90%|████████▉ | 318/355 [02:49<00:19,  1.93it/s]Loading weights:  91%|█████████ | 322/355 [02:51<00:16,  2.00it/s]Loading weights:  91%|█████████ | 323/355 [02:53<00:21,  1.51it/s]Loading weights:  91%|█████████▏| 324/355 [02:54<00:20,  1.49it/s]Loading weights:  93%|█████████▎| 329/355 [02:54<00:09,  2.61it/s]Loading weights:  94%|█████████▎| 332/355 [02:54<00:07,  3.11it/s]Loading weights:  94%|█████████▍| 333/355 [02:58<00:15,  1.43it/s]Loading weights:  94%|█████████▍| 334/355 [03:00<00:18,  1.11it/s]Loading weights:  97%|█████████▋| 343/355 [03:02<00:05,  2.20it/s]Loading weights:  97%|█████████▋| 344/355 [03:02<00:04,  2.36it/s]Loading weights:  97%|█████████▋| 346/355 [03:03<00:04,  2.14it/s]Loading weights:  99%|█████████▉| 351/355 [03:04<00:01,  3.12it/s]Loading weights: 100%|█████████▉| 354/355 [03:04<00:00,  3.85it/s]Loading weights: 100%|██████████| 355/355 [03:04<00:00,  1.92it/s]
+    16/726, about 25 min left
+    32/726, about 23 min left
+    48/726, about 22 min left
+    64/726, about 21 min left
+    80/726, about 20 min left
+    96/726, about 21 min left
+    112/726, about 20 min left
+    128/726, about 19 min left
+    144/726, about 19 min left
+    160/726, about 18 min left
+    176/726, about 18 min left
+    192/726, about 17 min left
+    208/726, about 17 min left
+    224/726, about 16 min left
+    240/726, about 16 min left
+    256/726, about 15 min left
+    272/726, about 14 min left
+    288/726, about 14 min left
+    304/726, about 13 min left
+    320/726, about 13 min left
+    336/726, about 12 min left
+    352/726, about 12 min left
+    368/726, about 12 min left
+    384/726, about 12 min left
+    400/726, about 11 min left
+    416/726, about 11 min left
+    432/726, about 10 min left
+    448/726, about 10 min left
+    464/726, about 10 min left
+    480/726, about 9 min left
+    496/726, about 8 min left
+    512/726, about 8 min left
+    528/726, about 7 min left
+    544/726, about 7 min left
+    560/726, about 6 min left
+    576/726, about 6 min left
+    592/726, about 5 min left
+    608/726, about 5 min left
+    624/726, about 4 min left
+    640/726, about 3 min left
+    656/726, about 3 min left
+    672/726, about 2 min left
+    688/726, about 1 min left
+    704/726, about 1 min left
+    720/726, about 0 min left
+    726/726, about 0 min left
+
+==========================================================================
+WHAT THE MODEL DOES   chance of a correct pick is 16.7%
+
+  PASSAGE
+    group        n    correct          wrong            declines
+    named       268    72.0% [66.4-77.0]    16.8% [12.8-21.7]    11.2% [ 8.0-15.5]
+    category    216    38.4% [32.2-45.1]    40.3% [34.0-46.9]    21.3% [16.4-27.2]
+    silent      242    36.8% [31.0-43.0]    29.3% [24.0-35.4]    33.9% [28.2-40.1]
+
+==========================================================================
+WITH THE PAGE IN HAND, DOES IT ANSWER ANYWAY?
+  category  answers  78.7% of the time;  40.3% are wrong
+  silent    answers  66.1% of the time;  29.3% are wrong
+  wrong-answer rate, category minus silent:  +10.9 points  z=+2.46  p=0.014
+  wrong-answer rate, named minus category:  -23.5 points  z=-5.77  p=8.05e-09
+
+  The category group is the one the paper is about: the page says something
+  true and relevant, but not enough to pick among the options. A wrong answer
+  there is a confident guess, not a misreading.
+
+  by relation, with the page
+    contraindication     named     n= 132  correct  60.6%  wrong  25.8%  declines  13.6%
+    contraindication     category  n=  89  correct  23.6%  wrong  55.1%  declines  21.3%
+    contraindication     silent    n= 125  correct  26.4%  wrong  41.6%  declines  32.0%
+    indication           named     n= 136  correct  83.1%  wrong   8.1%  declines   8.8%
+    indication           category  n= 127  correct  48.8%  wrong  29.9%  declines  21.3%
+    indication           silent    n= 117  correct  47.9%  wrong  16.2%  declines  35.9%
+
+wrote abstain_OLMo-2-1124-7B-Instruct_label.csv: 726 rows

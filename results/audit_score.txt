@@ -1,0 +1,32 @@
+AUDIT: 160 sentences, 154 with a majority label, 6 ties left out
+
+  4 annotators: Fleiss' kappa 0.89
+  pairwise Cohen's kappa 0.86 to 0.93
+  unanimous on 141 of 160 items
+
+  majority label by graph relation and corpus (% of named sentences):
+  relation          corpus      n   treats  must-not  warning  no link   supports
+  indication        wikipedia   39    97.4%      0.0%     0.0%     2.6%     97.4%
+  indication        label       40    80.0%      0.0%    10.0%    10.0%     80.0%
+  contraindication  wikipedia   39     5.1%     10.3%    82.1%     2.6%     92.3%
+  contraindication  label       36     2.8%     11.1%    83.3%     2.8%     94.4%
+  indication        all         79  supports the graph relation: 88.6%
+  contraindication  all         75  supports the graph relation: 93.3%
+
+  'supports': an indication sentence says the drug treats the disease; a
+  contraindication sentence says it must not be used or warns about harm.
+
+  automatic checks against the majority label:
+  judge  four-way agreement  95.5% (kappa 0.92);  supported/not agreement  98.1% (kappa 0.88), n=154
+  cue    four-way agreement  64.3% (kappa 0.43);  supported/not agreement  66.2% (kappa 0.05), n=154
+
+RECALL: 50 contraindications the matcher misses in the label's own section,
+        49 with a majority label, 1 ties left out
+
+  4 annotators: Fleiss' kappa 0.92
+  pairwise Cohen's kappa 0.88 to 1.00
+  unanimous on 49 of 50 items
+
+  Y    3    6.1%  stated in other words (a matcher miss)
+  B    1    2.0%  only a broader group is stated
+  N   45   91.8%  not in the Contraindications section

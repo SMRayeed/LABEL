@@ -1,0 +1,7 @@
+Wikipedia                    drugs  574  OR 2.43  test-based [2.01, 2.94]  RBG [1.98, 2.98]  CMH p 1.9e-18
+PubMed                       drugs  574  OR 2.77  test-based [2.33, 3.28]  RBG [2.30, 3.33]  CMH p 5.5e-29
+Wiki+PubMed                  drugs  574  OR 2.19  test-based [1.86, 2.57]  RBG [1.85, 2.59]  CMH p 1.7e-20
+Label-own                    drugs  472  OR 9.85  test-based [7.75, 12.51]  RBG [6.71, 14.45]  CMH p 1.3e-45
+Label-whole                  drugs  472  OR 1.05  test-based [0.88, 1.25]  RBG [0.88, 1.25]  CMH p 6.2e-01
+All-three                    drugs  472  OR 1.43  test-based [1.21, 1.68]  RBG [1.21, 1.68]  CMH p 2.2e-05
+Hetionet                     drugs   51  OR 2.48  test-based [1.29, 4.75]  RBG [1.21, 5.08]  CMH p 1.7e-02

@@ -1,0 +1,48 @@
+  ancestors from mondo_child_parent.csv: child=child parent=parent -> 17,801 rows, 11,788 children
+read 9,720 rows from relcheck_judged.csv
+wrote relcheck_judged.csv
+
+  agreement with the paper's named/not-named call (same edges):
+    wikipedia   97.9% of 3,444 edges
+    pubmed      99.3% of 3,444 edges
+    label      100.0% of 2,832 edges
+
+==============================================================================
+DOES THE NAMING SENTENCE STATE THE RELATION?
+==============================================================================
+  named         the text names the disease (the paper's measure)
+  cue           ... and the sentence has a relation word; for a
+                contraindication a warning word also counts
+  cue_strict    ... contraindication needs contraindicated/must not/avoid ...
+  judge         ... and the model judge reads the relation (warning counts)
+  judge_strict  ... the judge reads 'must not be used'
+
+  corpus     definition      ind %  contra %   OR [95% RBG CI]          p
+  wikipedia  named           18.41      8.01    2.68 [2.16, 3.34]   9.8e-20
+  wikipedia  cue             16.32      4.18    4.60 [3.49, 6.07]   4.2e-32
+  wikipedia  cue_strict      16.32      1.74   11.46 [7.64, 17.18]   1.4e-50
+  wikipedia  judge           17.19      7.38    2.70 [2.15, 3.39]   7.9e-19
+  wikipedia  judge_strict    17.19      1.10   18.68 [11.43, 30.54]   6.5e-60
+
+  pubmed     named           25.61     10.80    2.83 [2.34, 3.41]   1.7e-29
+  pubmed     cue             13.59      2.73    5.64 [4.08, 7.78]   9.9e-32
+  pubmed     cue_strict      13.59      0.17   87.62 [28.11, 273.16]   3.0e-55
+  pubmed     judge           17.83      9.35    2.09 [1.71, 2.57]   2.8e-13
+  pubmed     judge_strict    17.83      0.06   460.00 [58.01, 3647.67]   6.4e-76
+
+  label      named           23.73     22.88    1.05 [0.88, 1.25]   6.2e-01
+  label      cue             20.55     16.81    1.30 [1.07, 1.57]   1.1e-02
+  label      cue_strict      20.55      4.73    5.48 [4.10, 7.33]   4.9e-37
+  label      judge           18.86     20.76    0.88 [0.73, 1.07]   2.1e-01
+  label      judge_strict    18.86      2.19   10.32 [6.98, 15.25]   6.2e-47
+
+  Each row is the same edges; only the definition of 'stated' changes.
+  The prose gap survives a stricter definition if OR stays above 1.
+
+  share of NAMED facts whose sentence states the relation (cue / judge):
+    wikipedia  indication        named   317   cue  88.6%   judge  93.4% (n=317)
+    wikipedia  contraindication  named   138   cue  52.2%   judge  92.0% (n=138)
+    pubmed     indication        named   441   cue  53.1%   judge  69.6% (n=441)
+    pubmed     contraindication  named   186   cue  25.3%   judge  86.6% (n=186)
+    label      indication        named   336   cue  86.6%   judge  79.5% (n=336)
+    label      contraindication  named   324   cue  73.5%   judge  90.7% (n=324)

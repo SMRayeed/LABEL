@@ -1,0 +1,98 @@
+  ancestors from mondo_child_parent.csv: child=child parent=parent -> 17,801 rows, 11,788 children
+
+0 answered, 726 to go
+loading Qwen/Qwen2.5-7B-Instruct on cpu, 36 threads ...
+
+726 questions (5 options plus 'Not enough information to tell')
+  130 questions left out: the drug has no FDA label (--page-labels)
+  24 category edges skipped: the cleaned passage no longer shows the family (replaced by other edges where available)
+  30 named edges skipped: the cleaned passage no longer shows the target (replaced by other edges where available)
+
+  group      relation               questions   all-sibling options
+  named      contraindication             132     29.5%
+  named      indication                   136     39.7%
+  category   contraindication              89     84.3%
+  category   indication                   127     83.5%
+  silent     contraindication             125     44.8%
+  silent     indication                   117     60.7%
+
+  'all-sibling' is the share of questions whose distractors are all from the
+  target's own category. Where siblings run out, random targets fill in, which
+  makes those questions easier by elimination.
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   0%|          | 1/339 [00:14<1:21:02, 14.39s/it]Loading weights:   9%|▉         | 30/339 [00:17<02:12,  2.33it/s] Loading weights:  14%|█▎        | 46/339 [00:17<01:13,  3.98it/s]Loading weights:  15%|█▍        | 50/339 [00:18<01:14,  3.86it/s]Loading weights:  16%|█▌        | 53/339 [00:19<01:15,  3.80it/s]Loading weights:  19%|█▉        | 64/339 [00:21<01:02,  4.42it/s]Loading weights:  21%|██        | 72/339 [00:21<00:47,  5.57it/s]Loading weights:  22%|██▏       | 76/339 [00:23<00:59,  4.41it/s]Loading weights:  23%|██▎       | 77/339 [00:23<00:57,  4.53it/s]Loading weights:  26%|██▌       | 88/339 [00:25<00:49,  5.09it/s]Loading weights:  29%|██▉       | 100/339 [00:26<00:37,  6.31it/s]Loading weights:  32%|███▏      | 110/339 [00:28<00:38,  6.00it/s]Loading weights:  33%|███▎      | 112/339 [00:31<01:01,  3.67it/s]Loading weights:  37%|███▋      | 124/339 [00:31<00:34,  6.21it/s]Loading weights:  39%|███▉      | 132/339 [00:32<00:30,  6.75it/s]Loading weights:  40%|███▉      | 135/339 [00:32<00:28,  7.11it/s]Loading weights:  40%|████      | 137/339 [00:33<00:33,  6.01it/s]Loading weights:  44%|████▎     | 148/339 [00:36<00:37,  5.07it/s]Loading weights:  47%|████▋     | 160/339 [00:36<00:22,  8.04it/s]Loading weights:  48%|████▊     | 162/339 [00:38<00:38,  4.54it/s]Loading weights:  51%|█████▏    | 174/339 [00:41<00:35,  4.66it/s]Loading weights:  55%|█████▍    | 185/339 [00:41<00:22,  6.90it/s]Loading weights:  58%|█████▊    | 196/339 [00:43<00:20,  6.93it/s]Loading weights:  61%|██████▏   | 208/339 [00:46<00:24,  5.39it/s]Loading weights:  65%|██████▌   | 221/339 [00:48<00:22,  5.29it/s]Loading weights:  66%|██████▌   | 223/339 [00:49<00:20,  5.54it/s]Loading weights:  68%|██████▊   | 232/339 [00:49<00:15,  6.92it/s]Loading weights:  69%|██████▉   | 234/339 [00:50<00:18,  5.69it/s]Loading weights:  72%|███████▏  | 244/339 [00:51<00:15,  6.29it/s]Loading weights:  73%|███████▎  | 246/339 [00:52<00:15,  5.88it/s]Loading weights:  76%|███████▌  | 256/339 [00:54<00:15,  5.36it/s]Loading weights:  76%|███████▌  | 257/339 [00:56<00:24,  3.38it/s]Loading weights:  81%|████████▏ | 276/339 [00:58<00:11,  5.46it/s]Loading weights:  83%|████████▎ | 280/339 [00:59<00:09,  5.96it/s]Loading weights:  86%|████████▌ | 292/339 [01:01<00:09,  5.17it/s]Loading weights:  86%|████████▋ | 293/339 [01:02<00:08,  5.17it/s]Loading weights:  90%|████████▉ | 304/339 [01:02<00:05,  6.84it/s]Loading weights:  90%|████████▉ | 305/339 [01:03<00:06,  5.60it/s]Loading weights:  90%|█████████ | 306/339 [01:04<00:07,  4.59it/s]Loading weights:  93%|█████████▎| 316/339 [01:05<00:03,  7.23it/s]Loading weights:  97%|█████████▋| 328/339 [01:06<00:01,  6.79it/s]Loading weights: 100%|██████████| 339/339 [01:06<00:00,  5.06it/s]
+    16/726, about 21 min left
+    32/726, about 19 min left
+    48/726, about 18 min left
+    64/726, about 17 min left
+    80/726, about 17 min left
+    96/726, about 17 min left
+    112/726, about 17 min left
+    128/726, about 16 min left
+    144/726, about 16 min left
+    160/726, about 15 min left
+    176/726, about 15 min left
+    192/726, about 15 min left
+    208/726, about 14 min left
+    224/726, about 14 min left
+    240/726, about 13 min left
+    256/726, about 13 min left
+    272/726, about 13 min left
+    288/726, about 12 min left
+    304/726, about 12 min left
+    320/726, about 11 min left
+    336/726, about 11 min left
+    352/726, about 11 min left
+    368/726, about 10 min left
+    384/726, about 10 min left
+    400/726, about 10 min left
+    416/726, about 10 min left
+    432/726, about 9 min left
+    448/726, about 9 min left
+    464/726, about 8 min left
+    480/726, about 8 min left
+    496/726, about 8 min left
+    512/726, about 7 min left
+    528/726, about 7 min left
+    544/726, about 6 min left
+    560/726, about 6 min left
+    576/726, about 5 min left
+    592/726, about 5 min left
+    608/726, about 4 min left
+    624/726, about 4 min left
+    640/726, about 3 min left
+    656/726, about 2 min left
+    672/726, about 2 min left
+    688/726, about 1 min left
+    704/726, about 1 min left
+    720/726, about 0 min left
+    726/726, about 0 min left
+
+==========================================================================
+WHAT THE MODEL DOES   chance of a correct pick is 16.7%
+
+  PASSAGE
+    group        n    correct          wrong            declines
+    named       268    56.0% [50.0-61.8]     1.9% [ 0.8- 4.3]    42.2% [36.4-48.1]
+    category    216    21.3% [16.4-27.2]    11.1% [ 7.6-16.0]    67.6% [61.1-73.5]
+    silent      242    14.9% [10.9-19.9]     3.3% [ 1.7- 6.4]    81.8% [76.5-86.2]
+
+==========================================================================
+WITH THE PAGE IN HAND, DOES IT ANSWER ANYWAY?
+  category  answers  32.4% of the time;  11.1% are wrong
+  silent    answers  18.2% of the time;   3.3% are wrong
+  wrong-answer rate, category minus silent:   +7.8 points  z=+3.27  p=0.00107
+  wrong-answer rate, named minus category:   -9.2 points  z=-4.26  p=2.04e-05
+
+  The category group is the one the paper is about: the page says something
+  true and relevant, but not enough to pick among the options. A wrong answer
+  there is a confident guess, not a misreading.
+
+  by relation, with the page
+    contraindication     named     n= 132  correct  43.2%  wrong   2.3%  declines  54.5%
+    contraindication     category  n=  89  correct  13.5%  wrong   6.7%  declines  79.8%
+    contraindication     silent    n= 125  correct  10.4%  wrong   2.4%  declines  87.2%
+    indication           named     n= 136  correct  68.4%  wrong   1.5%  declines  30.1%
+    indication           category  n= 127  correct  26.8%  wrong  14.2%  declines  59.1%
+    indication           silent    n= 117  correct  19.7%  wrong   4.3%  declines  76.1%
+
+wrote abstain_Qwen2.5-7B-Instruct_label.csv: 726 rows
