@@ -328,15 +328,6 @@ All settings live in [`config.sh`](config.sh). Each step resumes if it stops.
 | 🗄️ `derived_data/` | PrimeKG and Hetionet files the analysis reads |
 | 📊 `results/` | Every number, log and per-question answer ([`SUMMARY.md`](results/SUMMARY.md)) |
 | 🧪 `tests/`, `tools/` | Fake-data test and the result checker |
-| 🎨 `paper/` | Figure sources (`build_figures.py`, draw.io files) |
 | 🖼️ `docs/figures/` | Figures for this page |
 
-## 📝 Cite
 
-```bibtex
-@inproceedings{rayeed2027label,
-  title     = {{LABEL}: {L}iterature {A}symmetry between {E}fficacy and {L}imits in {D}rug {K}nowledge and {L}anguage {M}odels},
-  author    = {Rayeed, S M and Stewart, Charles and Ma, Yao},
-  year      = {2027}
-}
-```
