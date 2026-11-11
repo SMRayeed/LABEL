@@ -2,7 +2,7 @@
 
 ## 💊 LABEL: Literature Asymmetry between Efficacy and Limits in Drug Knowledge and Language Models
 
-[![Venue](https://img.shields.io/badge/W3PHIAI-AAAI%202027-7B5BD6)](paper/w3phiai.pdf)
+![Venue](https://img.shields.io/badge/W3PHIAI-AAAI%202027-7B5BD6)
 [![License: MIT](https://img.shields.io/badge/license-MIT-1AA874)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.9%2B-2E7BE0)](#-run-it)
 [![Data](https://img.shields.io/badge/data-PrimeKG%20%C2%B7%20MONDO%20%C2%B7%20FDA-F07537)](DATA.md)
@@ -137,8 +137,8 @@ flowchart TD
 | Model | Size | Family |
 |---|---|---|
 | Qwen2.5 | 0.5B · 1.5B · 3B · 7B · 14B | Alibaba Qwen |
-| OLMo 2 | 7B | AI2 (fully open data) |
-| Granite 3.1 | 8B | IBM |
+| OLMo-2 | 7B | AI2 (fully open data) |
+| Granite-3.1 | 8B | IBM |
 
 All models run on CPU in fp32. We score each option by its log-probability.
 
@@ -152,9 +152,11 @@ All models run on CPU in fp32. We score each option by its log-probability.
 
 | Source | ✅ Uses named | ⛔ Limits named | Within-drug OR [95% CI] |
 |---|---:|---:|---|
-| 📖 Wikipedia | 20.3% | 9.8% | **2.43** [2.01, 2.94] |
-| 🔬 PubMed | 26.3% | 11.4% | **2.77** [2.33, 3.28] |
-| 📖 + 🔬 Both | 29.0% | 15.9% | **2.19** [1.86, 2.57] |
+| 📖 Wikipedia | 20.3% | 9.8% | **2.43** [1.98, 2.98] |
+| 🔬 PubMed | 26.3% | 11.4% | **2.77** [2.30, 3.33] |
+| 📖 + 🔬 Both | 29.0% | 15.9% | **2.19** [1.85, 2.59] |
+
+Intervals use the Robins-Breslow-Greenland variance.
 
 **What it means:** in every prose source, a limit is less than half as likely to show up as a use of the same drug.
 
@@ -180,11 +182,11 @@ One surprise: the label rarely lists these limits in its own *Contraindications*
 
 | Model | ✅ Uses | 🔸 Off-label | ⛔ Limits | Gap |
 |---|---:|---:|---:|---:|
-| Qwen2.5 0.5B | 31.5 | 28.5 | 22.2 | +9.3 |
-| Qwen2.5 1.5B | 45.7 | 35.8 | 25.3 | +20.3 |
-| Qwen2.5 3B | 45.3 | 32.7 | 24.2 | +21.2 |
-| Qwen2.5 7B | 50.8 | 35.0 | 23.8 | +27.0 |
-| Qwen2.5 14B | 49.8 | 35.8 | 27.2 | +22.7 |
+| Qwen2.5-0.5B | 31.5 | 28.5 | 22.2 | +9.3 |
+| Qwen2.5-1.5B | 45.7 | 35.8 | 25.3 | +20.3 |
+| Qwen2.5-3B | 45.3 | 32.7 | 24.2 | +21.2 |
+| Qwen2.5-7B | 50.8 | 35.0 | 23.8 | +27.0 |
+| Qwen2.5-14B | 49.8 | 35.8 | 27.2 | +22.7 |
 
 Accuracy in %, closed book, chance = 20%.
 **What it means:** use accuracy climbs with size. Limit accuracy stays near chance at every size.
@@ -195,13 +197,13 @@ Accuracy in %, closed book, chance = 20%.
 
 | Model | ✅ Uses correct | ⛔ Limits correct | Gap | ⛔ Wrong | ⛔ Declined | ⛔ Precision |
 |---|---:|---:|---:|---:|---:|---:|
-| Qwen2.5 0.5B | 36.0 | 28.1 | +7.9 | 71.4 | 0.5 | 28.2 |
-| Qwen2.5 7B | 56.0 | 25.1 | +30.9 | 24.1 | 50.7 | 51.0 |
-| OLMo 2 7B | 56.0 | 33.0 | +23.0 | 64.0 | 3.0 | 34.0 |
-| Granite 3.1 8B | 58.7 | 12.8 | **+45.9** | 19.7 | 67.5 | 39.4 |
+| Qwen2.5-0.5B | 36.0 | 28.1 | +7.9 | 71.4 | 0.5 | 28.2 |
+| Qwen2.5-7B | 56.0 | 25.1 | +30.9 | 24.1 | 50.7 | 51.0 |
+| OLMo-2-7B | 56.0 | 33.0 | +23.0 | 64.0 | 3.0 | 34.0 |
+| Granite-3.1-8B | 58.7 | 12.8 | **+45.9** | 19.7 | 67.5 | 39.4 |
 
-- 🎲 **Qwen 0.5B and OLMo guess.** They almost never decline, so most limit answers are wrong.
-- 🙅 **Qwen 7B and Granite decline.** They say "Not enough information" for half or more of the limits.
+- 🎲 **Qwen2.5-0.5B and OLMo-2-7B guess.** They almost never decline, so most limit answers are wrong.
+- 🙅 **Qwen2.5-7B and Granite-3.1-8B decline.** They say "Not enough information" for half or more of the limits.
 - Either way, no model knows the limits well.
 
 ### 5️⃣ A page helps only if it names the disease
@@ -227,6 +229,42 @@ We run the same test on Hetionet, with two *positive* relations: **treats** and 
 
 **What it means:** two kinds of "good" facts show no gap. The gap appears only when one side is a risk.
 
+### 7️⃣ The naming sentence really states the relation
+
+A disease name in the text does not always say *how* the drug and the disease are linked. So we check each naming sentence.
+
+- 🤖 **Model judge.** Qwen2.5-7B reads the sentence and picks: *treats*, *must not be used*, *may cause or worsen it / needs caution*, or *no link*.
+- 👥 **Four annotators** label 160 named sentences with the relation hidden (Wikipedia and label, 40 per relation each).
+- 🔍 **Recall check.** The same annotators read 50 label *Contraindications* sections where the matcher found nothing.
+
+| Source | OR, named | OR, sentence states the relation |
+|---|---|---|
+| 📖 Wikipedia | 2.68 [2.16, 3.34] | **2.70** [2.15, 3.39] |
+| 🔬 PubMed | 2.83 [2.34, 3.41] | **2.09** [1.71, 2.57] |
+| 🏷️ Whole FDA label | 1.05 [0.88, 1.25] | **0.88** [0.73, 1.07] |
+
+| Check | Result |
+|---|---|
+| Annotator agreement | Fleiss' κ = **0.89** (audit), **0.92** (recall) |
+| Judge vs. annotators | **95.5%** agreement, κ = 0.92 |
+| Named sentences that state the relation | **88.6%** of uses, **93.3%** of limits |
+| Limits written as warnings / formal contraindications | **82–83%** / 10–11% |
+| Recall check: fact absent from the section | **45 of 50**; only 3 are worded differently |
+
+**What it means:** the gap holds when each sentence must state the relation, and the label stays even. Most of PrimeKG's "contraindications" are written as warnings, so we count both as safety statements.
+
+### 8️⃣ Routing safety questions to the label helps when the label names the fact
+
+We ask the same 726 harder questions with a page cut from the drug's whole FDA label, and compare it with the usual prose page.
+
+| ⛔ Limit questions | Prose page | Label page | Difference [95% CI] |
+|---|---:|---:|---|
+| 🟢 Label names the answer (135) | 40.0 | 55.8 | **+15.8** [8.6, 23.2] |
+| ⚪ Label is silent (211) | 17.1 | 12.2 | −4.9 [−8.2, −1.7] |
+
+Accuracy in %, pooled over the three 7–8B models. For ✅ use questions the label adds little (+3.4 when it names them) and hurts when it is silent (−11.0), so uses stay with prose. Over all questions, routing changes accuracy by +1.5 [−0.2, +3.2].
+**What it means:** send safety questions to the label, but first check that the label names the condition.
+
 ---
 
 ## 💡 What it means
@@ -241,7 +279,7 @@ We run the same test on Hetionet, with two *positive* relations: **treats** and 
 
 ## ⚠️ Limitations
 
-- 🔤 Our matcher works on names. It misses a limit that the text describes in other words.
+- 🔤 Our matcher works on names. In a check of 50 label sections it missed 3 limits written in other words.
 - 🗄️ PrimeKG is our ground truth. Some of its edges may be wrong or old.
 - 🌐 We measure today's Wikipedia and PubMed. Both change over time.
 - 🤖 We test open models up to 14B. We do not test large closed models.
@@ -249,7 +287,7 @@ We run the same test on Hetionet, with two *positive* relations: **treats** and 
 
 ## 🔭 Future work
 
-- 🔁 Build a full system that sends limit questions to the label and checks the answer.
+- 🔁 Build and evaluate the full agent: we test only its routing step.
 - 🌍 Add labels from other agencies (EMA, PMDA) and other languages.
 - 📈 Test larger and closed models with the same questions.
 - 🧬 Look for the same gap in other "good vs. risk" pairs, like gene benefits and side effects.
@@ -269,6 +307,12 @@ bash run_all.sh --smoke
 export CONTACT="you@example.org"     # for the Wikipedia User-Agent
 bash run_all.sh
 bash run_all.sh --status
+
+# 4. Relation check, annotation scoring and routing test (after step 3)
+bash relcheck.sh quick               # keyword check, RBG intervals, blank audit sheets
+bash relcheck.sh submit              # model judge + label-page runs (SLURM)
+bash relcheck.sh report              # judge and routing tables
+bash relcheck.sh audit AUDIT.csv RECALL.csv   # one *_label column per annotator
 ```
 
 All settings live in [`config.sh`](config.sh). Each step resumes if it stops.
@@ -278,12 +322,13 @@ All settings live in [`config.sh`](config.sh). Each step resumes if it stops.
 | Path | What it holds |
 |---|---|
 | 📜 `run_all.sh`, `pipeline.sh` | Run the whole study, step by step |
+| 🔎 `relcheck.sh` | Relation check, annotation scoring and routing test |
 | ⚙️ `config.sh`, `config_extend.sh` | All settings: account, models, data links |
 | 🐍 `scripts/` | Analysis and model scripts |
 | 🗄️ `derived_data/` | PrimeKG and Hetionet files the analysis reads |
 | 📊 `results/` | Every number, log and per-question answer ([`SUMMARY.md`](results/SUMMARY.md)) |
 | 🧪 `tests/`, `tools/` | Fake-data test and the result checker |
-| 📄 `paper/` | The paper and supplement PDFs |
+| 🎨 `paper/` | Figure sources (`build_figures.py`, draw.io files) |
 | 🖼️ `docs/figures/` | Figures for this page |
 
 ## 📝 Cite
