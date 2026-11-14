@@ -30,20 +30,20 @@ def cards(out, icons_dir, items, cols, title=None, accent="#2F7BE5"):
 
 B, O, G, P, S_, R = "#2F7BE5", "#F07338", "#19A974", "#7B5CD6", "#5B6573", "#E5484D"
 root = sys.argv[1]
-cards(f"{root}/label/docs/figures/data_at_a_glance.png", f"{root}/label/paper/icons", [
+cards(f"{root}/label/docs/figures/data_at_a_glance.png", f"{root}/label/docs/icons", [
     ("card_file_box", "8.1M", "PrimeKG rows\n(biomedical knowledge graph)", P),
     ("anatomical_heart", "9,388", "indication edges\n(what a drug treats)", B),
     ("warning", "30,675", "contraindication edges\n(who must not take it)", O),
     ("pill", "574", "drugs in the matched sample\n3 + 3 facts per drug", S_),
     ("globe_with_meridians", "3", "text sources: Wikipedia,\nPubMed, FDA drug label", G),
-    ("robot", "7", "language models\n0.5B to 14B, 3 families", R),
+    ("robot", "7", "LLMs\n0.5B to 14B, 3 families", R),
 ], cols=3, title="LABEL at a glance")
 cards(f"{root}/clade/docs/figures/data_at_a_glance.png", f"{root}/clade/paper/icons", [
     ("pill", "856", "PrimeKG questions\n(drugs and diseases)", B),
     ("dna", "900", "GloBI questions\n(species interactions)", G),
     ("card_file_box", "17,801", "MONDO disease\nfamily links", P),
     ("file_cabinet", "77,852", "GloBI taxonomy links\n(species to genus to family)", G),
-    ("robot", "5", "language models\n0.5B to 14B, 3 families", O),
+    ("robot", "5", "LLMs\n0.5B to 14B, 3 families", O),
     ("puzzle_piece", "3", "page types: answer named,\nfamily only, or silent", S_),
 ], cols=3, title="CLADE at a glance")
 print("ok")
